@@ -1,330 +1,351 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Elus</title>
+    <link rel="stylesheet" href="css/elu.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="icon" type="image/png" href="img/logo%20CASBT.png" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/elu.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="accueil.html"><img class="logo-casbt" src="img/logo%20CASBT.png" /></a></li>
-                <li>
-                    <a href="territoire.html">Le Territoire</a>
-                </li>
-                <li>
-                    <a href="elu.html">Les Elus CASBT</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <div class="pseudo-2"></div>
-            <div class="pseudo-3"></div>
-            <div class="pseudo-4"></div>
-            <button class="btnSearch">
-                <svg class="icon-search" width="28" height="29" viewBox="0 0 28 29" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M17.7203 17.388L21.9067 21.8282L19.9968 23.6289L15.7248 19.098C14.7009 19.6847 13.5146 20.02 12.25 20.02C8.38401 20.02 5.25 16.886 5.25 13.02C5.25 9.15403 8.38401 6.02002 12.25 6.02002C16.116 6.02002 19.25 9.15403 19.25 13.02C19.25 14.6722 18.6776 16.1907 17.7203 17.388ZM12.25 17.395C14.6662 17.395 16.625 15.4363 16.625 13.02C16.625 10.6038 14.6662 8.64502 12.25 8.64502C9.83375 8.64502 7.875 10.6038 7.875 13.02C7.875 15.4363 9.83375 17.395 12.25 17.395Z"
-                        fill="white" />
-                </svg>
-                <div class="text-wrapper-14">Rechercher</div>
-            </button>
-        </nav>
+      <nav class="navbar">
+        <a href="accueil.html"
+          ><img class="logo-casbt" src="img/logo CASBT.png"
+        /></a>
+        <ul>
+          <li><a href="territoire.html">Le Territoire</a></li>
+          <li><a href="elu.html">Les Élus</a></li>
+          <li><a href="#">Infos pratiques</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="btnSearch">
+          <svg
+            class="icon-search"
+            width="28"
+            height="29"
+            viewBox="0 0 28 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.7203 17.388L21.9067 21.8282L19.9968 23.6289L15.7248 19.098C14.7009 19.6847 13.5146 20.02 12.25 20.02C8.38401 20.02 5.25 16.886 5.25 13.02C5.25 9.15403 8.38401 6.02002 12.25 6.02002C16.116 6.02002 19.25 9.15403 19.25 13.02C19.25 14.6722 18.6776 16.1907 17.7203 17.388ZM12.25 17.395C14.6662 17.395 16.625 15.4363 16.625 13.02C16.625 10.6038 14.6662 8.64502 12.25 8.64502C9.83375 8.64502 7.875 10.6038 7.875 13.02C7.875 15.4363 9.83375 17.395 12.25 17.395Z"
+              fill="white"
+            />
+          </svg>
+          <div class="text-wrapper-14">Rechercher</div>
+        </button>
+      </nav>
+      <div id="myDiv" style="display: none">
+        <input type="search" placeholder="Rechercher..." />
+      </div>
     </header>
     <div class="les-elus">
-        <div class="div-elementor-wrapper">
-            <div class="div-2">
-                <div class="heading-5">
-                    <div class="text-wrapper-6">Bureau communautaire</div>
-                </div>
-            </div>
+      <div class="div-elementor-wrapper">
+        <div class="div-2">
+          <div class="heading-5">
+            <div class="text-wrapper-6">Bureau communautaire</div>
+          </div>
         </div>
-        <p class="les-responsabilit-s">
-            Les responsabilités au sein de la Communauté d&#39;Agglomération du Sud de Basse
-            Terre (CASBT) sont
-            réparties entre plusieurs directions.
-        </p>
+      </div>
+      <p class="les-responsabilit-s">
+        Les responsabilités au sein de la Communauté d&#39;Agglomération du Sud
+        de Basse Terre (CASBT) sont réparties entre plusieurs directions.
+      </p>
     </div>
     <div class="overlap">
-        <div class="div-elementor">
-            <div class="span-elementor"></div>
-            <div class="section-profiles">
-                <div class="text-wrapper">Membres du Bureau  Communautaire</div>
-                <div class="div-profile-card">
-                    <div class="link"><img class="img" src="img/thierry-abelli.png" />
-                    </div>
-                    <div class="div-profile-body">
-                        <div class="heading">
-                            <div class="text-wrapper-2">Thierry ABELLI</div>
-                        </div>
-                        <div class="p-profile">
-                            <div class="text-wrapper-3">Président</div>
-                        </div>
-                    </div>
-                    <img class="list" src="img/list.svg" />
-                </div>
-                <div class="div-profile-card-2">
-                    <div class="img-wrapper">
-                        <img class="img" src="img/FRANCISQUE-jean-louis.png" />
-                    </div>
-                    <div class="overlap-group">
-                        <div class="div-profile-body-2">
-                            <div class="link-wrapper">
-                                <div class="div-wrapper">
-                                    <div class="text-wrapper-4">FRANCISQUE
-                                        Jean-<br />Louis</div>
-                                </div>
-                            </div>
-                            <div class="p-profile-2">
-                                <div class="text-wrapper-3">1er Vice-Président</div>
-                            </div>
-                            <div class="text-wrapper-5">(Trois-Rivières)</div>
-                        </div>
-                        <img class="list-2" src="img/list-3.svg" />
-                    </div>
-                </div>
-                <div class="div-profile-card-2">
-                    <div class="img-wrapper"><img class="img" src="img/nadille-vala.png" /></div>
-                    <div class="overlap-group">
-                        <div class="div-profile-body-3">
-                            <div class="heading-2">
-                                <div class="div-wrapper">
-                                    <div class="text-wrapper-4">NADILLE-VALA<br />Rolande
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-profile-3">
-                                <div class="text-wrapper-3">5eme Vice-Présidente</div>
-                            </div>
-                            <div class="text-wrapper-5">(Terre-de-Bas)</div>
-                        </div>
-                        <img class="list-2" src="img/list-4.svg" />
-                    </div>
-                </div>
-                <div class="div-profile-card-2">
-                    <div class="img-wrapper"><img class="img" src="img/caravel-joëlle.png" />
-                    </div>
-                    <div class="overlap-2">
-                        <div class="terre-de-bas">(Capesterre-Belle-Eau)</div>
-                        <div class="div-profile-body-4">
-                            <div class="link-CARAVEL-jo-lle-wrapper">
-                                <div class="text-wrapper-2">CARAVEL Joëlle</div>
-                            </div>
-                            <div class="p-profile-4">
-                                <div class="text-wrapper-3">9eme Vice-Présidente</div>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="item-link" src="img/item-link-4.svg" />
-                </div>
-                <div class="div-profile-card-2">
-                    <div class="img-wrapper"><img class="img" src="img/LEON-alain.png" />
-                    </div>
-                    <div class="overlap-3">
-                        <div class="div-profile-body-5">
-                            <div class="link-LEON-alain-wrapper">
-                                <div class="text-wrapper-2">LEON Alain</div>
-                            </div>
-                            <div class="p-profile-5">
-                                <div class="text-wrapper-3">2eme Vice-Président</div>
-                            </div>
-                        </div>
-                        <div class="terre-de-bas">(Capesterre-Belle-Eau)</div>
-                    </div>
-                    <img class="item-link-2" src="img/item-link-2.svg" />
-                </div>
-                <div class="div-profile-card-2">
-                    <div class="img-wrapper">
-                        <img class="img" src="img/sylvie-gustave.png" />
-                    </div>
-                    <div class="overlap-group">
-                        <div class="div-profile-body-2">
-                            <div class="heading-3">
-                                <div class="div-wrapper">
-                                    <div class="text-wrapper-4">
-                                        GUSTAVE-DIT-DUFLO<br />Sylvie</div>
-                                </div>
-                            </div>
-                            <div class="p-profile-3">
-                                <div class="text-wrapper-3">6eme Vice-Présidente</div>
-                            </div>
-                            <div class="text-wrapper-5">(Baillif)</div>
-                        </div>
-                        <img class="list-2" src="img/list-5.svg" />
-                    </div>
-                </div>
-                <div class="div-profile-card-2">
-                    <div class="img-wrapper"><img class="img" src="img/image-jpg.png" /></div>
-                    <div class="overlap-3">
-                        <div class="div-profile-body-5">
-                            <div class="link-EDMOND-claude-wrapper">
-                                <div class="text-wrapper-2">EDMOND Claude</div>
-                            </div>
-                            <div class="p-profile-5">
-                                <div class="text-wrapper-3">3eme Vice-Président</div>
-                            </div>
-                        </div>
-                        <div class="terre-de-bas">(Capesterre-Belle-Eau)</div>
-                    </div>
-                    <img class="item-link" src="img/item-link.svg" />
-                </div>
-                <div class="div-profile-card-2">
-                    <div class="img-wrapper"><img class="img" src="img/image-jpg-2.png" /></div>
-                    <div class="overlap-3">
-                        <div class="div-profile-body-5">
-                            <div class="link-ANSELME-jacques-wrapper">
-                                <div class="text-wrapper-2">ANSELME Jacques</div>
-                            </div>
-                            <div class="p-profile-4">
-                                <div class="text-wrapper-3">7ème Vice-Présidente</div>
-                            </div>
-                        </div>
-                        <div class="terre-de-bas-2">(Trois-Rivières)</div>
-                    </div>
-                    <img class="list-3" src="img/image.svg" />
-                </div>
-                <div class="div-profile-card-2">
-                    <div class="img-wrapper"><img class="img" src="img/image.png" /></div>
-                    <div class="overlap-3">
-                        <div class="div-profile-body-5">
-                            <div class="link-ANDRE-h-ric-wrapper">
-                                <div class="text-wrapper-2">ANDRE Héric</div>
-                            </div>
-                            <div class="p-profile-5">
-                                <div class="text-wrapper-3">4eme Vice-Président</div>
-                            </div>
-                        </div>
-                        <div class="terre-de-bas-3">(Vieux-Fort)</div>
-                    </div>
-                    <img class="item-link-2" src="img/item-link-3.svg" />
-                </div>
-                <div class="div-profile-card-3">
-                    <div class="img-wrapper"><img class="img" src="img/282640f-1655252630801-unnamed-jpg.png" /></div>
-                    <div class="overlap-group">
-                        <div class="div-profile-body-2">
-                            <div class="heading-4">
-                                <div class="div-wrapper">
-                                    <div class="text-wrapper-4">PENCHARD Marie-<br />Luce
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-profile-6">
-                                <div class="text-wrapper-3">8eme Vice-Président</div>
-                            </div>
-                            <div class="text-wrapper-5">(Basse-Terre)</div>
-                        </div>
-                        <img class="list-2" src="img/list-6.svg" />
-                    </div>
-                </div>
+      <div class="div-elementor">
+        <div class="span-elementor"></div>
+        <div class="section-profiles">
+          <div class="text-wrapper">Membres du Bureau  Communautaire</div>
+          <div class="div-profile-card">
+            <div class="link">
+              <img class="img" src="img/thierry-abelli.png" />
             </div>
+            <div class="div-profile-body">
+              <div class="heading">
+                <div class="text-wrapper-2">Thierry ABELLI</div>
+              </div>
+              <div class="p-profile">
+                <div class="text-wrapper-3">Président</div>
+              </div>
+            </div>
+            <img class="list" src="img/list.svg" />
+          </div>
+          <div class="div-profile-card-2">
+            <div class="img-wrapper">
+              <img class="img" src="img/FRANCISQUE-jean-louis.png" />
+            </div>
+            <div class="overlap-group">
+              <div class="div-profile-body-2">
+                <div class="link-wrapper">
+                  <div class="div-wrapper">
+                    <div class="text-wrapper-4">
+                      FRANCISQUE Jean-<br />Louis
+                    </div>
+                  </div>
+                </div>
+                <div class="p-profile-2">
+                  <div class="text-wrapper-3">1er Vice-Président</div>
+                </div>
+                <div class="text-wrapper-5">(Trois-Rivières)</div>
+              </div>
+              <img class="list-2" src="img/list-3.svg" />
+            </div>
+          </div>
+          <div class="div-profile-card-2">
+            <div class="img-wrapper">
+              <img class="img" src="img/nadille-vala.png" />
+            </div>
+            <div class="overlap-group">
+              <div class="div-profile-body-3">
+                <div class="heading-2">
+                  <div class="div-wrapper">
+                    <div class="text-wrapper-4">NADILLE-VALA<br />Rolande</div>
+                  </div>
+                </div>
+                <div class="p-profile-3">
+                  <div class="text-wrapper-3">5eme Vice-Présidente</div>
+                </div>
+                <div class="text-wrapper-5">(Terre-de-Bas)</div>
+              </div>
+              <img class="list-2" src="img/list-4.svg" />
+            </div>
+          </div>
+          <div class="div-profile-card-2">
+            <div class="img-wrapper">
+              <img class="img" src="img/caravel-joëlle.png" />
+            </div>
+            <div class="overlap-2">
+              <div class="terre-de-bas">(Capesterre-Belle-Eau)</div>
+              <div class="div-profile-body-4">
+                <div class="link-CARAVEL-jo-lle-wrapper">
+                  <div class="text-wrapper-2">CARAVEL Joëlle</div>
+                </div>
+                <div class="p-profile-4">
+                  <div class="text-wrapper-3">9eme Vice-Présidente</div>
+                </div>
+              </div>
+            </div>
+            <img class="item-link" src="img/item-link-4.svg" />
+          </div>
+          <div class="div-profile-card-2">
+            <div class="img-wrapper">
+              <img class="img" src="img/LEON-alain.png" />
+            </div>
+            <div class="overlap-3">
+              <div class="div-profile-body-5">
+                <div class="link-LEON-alain-wrapper">
+                  <div class="text-wrapper-2">LEON Alain</div>
+                </div>
+                <div class="p-profile-5">
+                  <div class="text-wrapper-3">2eme Vice-Président</div>
+                </div>
+              </div>
+              <div class="terre-de-bas">(Capesterre-Belle-Eau)</div>
+            </div>
+            <img class="item-link-2" src="img/item-link-2.svg" />
+          </div>
+          <div class="div-profile-card-2">
+            <div class="img-wrapper">
+              <img class="img" src="img/sylvie-gustave.png" />
+            </div>
+            <div class="overlap-group">
+              <div class="div-profile-body-2">
+                <div class="heading-3">
+                  <div class="div-wrapper">
+                    <div class="text-wrapper-4">
+                      GUSTAVE-DIT-DUFLO<br />Sylvie
+                    </div>
+                  </div>
+                </div>
+                <div class="p-profile-3">
+                  <div class="text-wrapper-3">6eme Vice-Présidente</div>
+                </div>
+                <div class="text-wrapper-5">(Baillif)</div>
+              </div>
+              <img class="list-2" src="img/list-5.svg" />
+            </div>
+          </div>
+          <div class="div-profile-card-2">
+            <div class="img-wrapper">
+              <img class="img" src="img/image-jpg.png" />
+            </div>
+            <div class="overlap-3">
+              <div class="div-profile-body-5">
+                <div class="link-EDMOND-claude-wrapper">
+                  <div class="text-wrapper-2">EDMOND Claude</div>
+                </div>
+                <div class="p-profile-5">
+                  <div class="text-wrapper-3">3eme Vice-Président</div>
+                </div>
+              </div>
+              <div class="terre-de-bas">(Capesterre-Belle-Eau)</div>
+            </div>
+            <img class="item-link" src="img/item-link.svg" />
+          </div>
+          <div class="div-profile-card-2">
+            <div class="img-wrapper">
+              <img class="img" src="img/image-jpg-2.png" />
+            </div>
+            <div class="overlap-3">
+              <div class="div-profile-body-5">
+                <div class="link-ANSELME-jacques-wrapper">
+                  <div class="text-wrapper-2">ANSELME Jacques</div>
+                </div>
+                <div class="p-profile-4">
+                  <div class="text-wrapper-3">7ème Vice-Présidente</div>
+                </div>
+              </div>
+              <div class="terre-de-bas-2">(Trois-Rivières)</div>
+            </div>
+            <img class="list-3" src="img/image.svg" />
+          </div>
+          <div class="div-profile-card-2">
+            <div class="img-wrapper">
+              <img class="img" src="img/image.png" />
+            </div>
+            <div class="overlap-3">
+              <div class="div-profile-body-5">
+                <div class="link-ANDRE-h-ric-wrapper">
+                  <div class="text-wrapper-2">ANDRE Héric</div>
+                </div>
+                <div class="p-profile-5">
+                  <div class="text-wrapper-3">4eme Vice-Président</div>
+                </div>
+              </div>
+              <div class="terre-de-bas-3">(Vieux-Fort)</div>
+            </div>
+            <img class="item-link-2" src="img/item-link-3.svg" />
+          </div>
+          <div class="div-profile-card-3">
+            <div class="img-wrapper">
+              <img
+                class="img"
+                src="img/282640f-1655252630801-unnamed-jpg.png"
+              />
+            </div>
+            <div class="overlap-group">
+              <div class="div-profile-body-2">
+                <div class="heading-4">
+                  <div class="div-wrapper">
+                    <div class="text-wrapper-4">PENCHARD Marie-<br />Luce</div>
+                  </div>
+                </div>
+                <div class="p-profile-6">
+                  <div class="text-wrapper-3">8eme Vice-Président</div>
+                </div>
+                <div class="text-wrapper-5">(Basse-Terre)</div>
+              </div>
+              <img class="list-2" src="img/list-6.svg" />
+            </div>
+          </div>
         </div>
-        <footer class="footer">
-            <div class="div-paris-footer">
-                <div class="div-paris-footer-2">
-                    <div class="div-profile-wrapper">
-                        <div class="div-profile">
-                            <div class="div-title">
-                                <div class="text-wrapper-7">Vous êtes...</div>
-                            </div>
-                            <div class="div-profile-text">
-                                <p class="acc-dez-des-actualit">
-                                    Accédez à des actualités et<br />informations
-                                    pratiques par profil
-                                </p>
-                            </div>
-                            <div class="div-profile-items">
-                                <div class="span-paris-button-wrapper">
-                                    <div class="span-paris-button">
-                                        <div class="text-wrapper-8">PROFESSIONNEL</div>
-                                    </div>
-                                </div>
-                                <div class="link-2">
-                                    <div class="span-paris-button">
-                                        <div class="text-wrapper-8">ASSOCIATION</div>
-                                    </div>
-                                </div>
-                                <div class="link-3">
-                                    <div class="span-paris-button">
-                                        <div class="text-wrapper-8">JEUNE</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="div-social-wrapper">
-                        <div class="div-social">
-                            <div class="div-social-title">
-                                <div class="text-wrapper-7">Sur les réseaux</div>
-                            </div>
-                            <img class="list-4" src="img/list-2.svg" />
-                        </div>
-                    </div>
-                    <div class="div-paris-footer-3">
-                        <div class="div-title-2">
-                            <div class="text-wrapper-7">Une question ?</div>
-                        </div>
-                        <div class="div-2">
-                            <div class="link-4">
-                                <div class="span-paris-button-2">
-                                    <div class="span-paris-button">
-                                        <div class="text-wrapper-8">CONTACTEZ NOUS PAR
-                                            EMAIL</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="link-5">
-                                <div class="span-paris-button-3">
-                                    <div class="span-paris-button">
-                                        <div class="text-wrapper-8">@ASKCASBT</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <footer class="footer">
+        <div class="div-paris-footer">
+          <div class="div-paris-footer-2">
+            <div class="div-profile-wrapper">
+              <div class="div-profile">
+                <div class="div-title">
+                  <div class="text-wrapper-7">Vous êtes...</div>
                 </div>
-            </div>
-            <div class="div-paris-footer-wrapper">
-                <div class="div-paris-footer-4">
-                    <div class="div-2">
-                        <p class="p">Retrouvez les actualités de votre commune</p>
-                    </div>
-                    <div class="div-paris-footer-5">
-                        <div class="div-paris-footer-6">
-                            <img class="img-2" src="img/img.svg" />
-                            <div class="options">
-                                <div class="s-lectionnez-votre-wrapper">
-                                    <div class="s-lectionnez-votre">SÉLECTIONNEZ VOTRE
-                                        COMMUNE</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="div-profile-text">
+                  <p class="acc-dez-des-actualit">
+                    Accédez à des actualités et<br />informations pratiques par
+                    profil
+                  </p>
                 </div>
+                <div class="div-profile-items">
+                  <div class="span-paris-button-wrapper">
+                    <div class="span-paris-button">
+                      <div class="text-wrapper-8">PROFESSIONNEL</div>
+                    </div>
+                  </div>
+                  <div class="link-2">
+                    <div class="span-paris-button">
+                      <div class="text-wrapper-8">ASSOCIATION</div>
+                    </div>
+                  </div>
+                  <div class="link-3">
+                    <div class="span-paris-button">
+                      <div class="text-wrapper-8">JEUNE</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="finpage">
-                <ul>
-                    <li>MENTIONS LÉGALES</li>
-                    <li>ACCESSIBILITÉ</li>
-                    <li>PRESSE</li>
-                    <li>OPEN DATA</li>
-                    <li>POLITIQUE DE COOKIES</li>
-                    <li>PLAN DU SITE</li>
-                </ul>
+            <div class="div-social-wrapper">
+              <div class="div-social">
+                <div class="div-social-title">
+                  <div class="text-wrapper-7">Sur les réseaux</div>
+                </div>
+                <img class="list-4" src="img/list-2.svg" />
+              </div>
             </div>
-            <!--<div class="frame">
+            <div class="div-paris-footer-3">
+              <div class="div-title-2">
+                <div class="text-wrapper-7">Une question ?</div>
+              </div>
+              <div class="div-2">
+                <div class="link-4">
+                  <div class="span-paris-button-2">
+                    <div class="span-paris-button">
+                      <div class="text-wrapper-8">CONTACTEZ NOUS PAR EMAIL</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="link-5">
+                  <div class="span-paris-button-3">
+                    <div class="span-paris-button">
+                      <div class="text-wrapper-8">@ASKCASBT</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-paris-footer-wrapper">
+          <div class="div-paris-footer-4">
+            <div class="div-2">
+              <p class="p">Retrouvez les actualités de votre commune</p>
+            </div>
+            <div class="div-paris-footer-5">
+              <div class="div-paris-footer-6">
+                <img class="img-2" src="img/img.svg" />
+                <div class="options">
+                  <div class="s-lectionnez-votre-wrapper">
+                    <div class="s-lectionnez-votre">
+                      SÉLECTIONNEZ VOTRE COMMUNE
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="finpage">
+          <ul>
+            <li>MENTIONS LÉGALES</li>
+            <li>ACCESSIBILITÉ</li>
+            <li>PRESSE</li>
+            <li>OPEN DATA</li>
+            <li>POLITIQUE DE COOKIES</li>
+            <li>PLAN DU SITE</li>
+          </ul>
+        </div>
+        <!--<div class="frame">
                     <img class="vector" src="img/vector.svg" />
                     <div class="droits">Copyright 2023&nbsp;&nbsp;Casbt</div>
                     <div class="vector-wrapper"><img class="vector-2" src="img/vector-3.svg" />
                     </div>
               </div>-->
-        </footer>
+      </footer>
     </div>
-</body>
-
+    <script src="js/file.js" type="text/javascript"></script>
+  </body>
 </html>
