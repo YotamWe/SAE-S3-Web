@@ -55,3 +55,11 @@ w
 G.idea/sonarlint/issuestore/7/9/792ed2a31203156e2afb7c3519c081c4e76af4a8,d\2\d26745abc4604c2bb6ecfc9ab999a6892997f746
 w
 G.idea/sonarlint/issuestore/8/4/842d959458bd5cddfafe8944dd3ea098304f4144,c\e\cebb07a0183ec8b1cd5951d3c1c8413328117c25
+C
+Site Web/js/file.js,d\2\d2b394cc7d9fc2f174c6f915389c76d8687fe6d4
+G
+Site Web/css/navbar.css,e\c\ec1e90d1e69ea19376cd19eec2a726ce7696dbd6
+A
+Site Web/FAQ.html,0\f\0fb80ae6f03623dcbac3bcd9bebeaa5386432700
+D
+Site Web/css/FAQ.css,f\0\f051ab7836bceb2023eaf33fe6deb41d2ef6f3b5

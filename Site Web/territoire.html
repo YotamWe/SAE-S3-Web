@@ -1,41 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Territoire</title>
+    <link rel="stylesheet" href="css/territoire.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="icon" type="image/png" href="img/logo%20CASBT.png" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/territoire.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="accueil.html"><img class="logo-casbt" src="img/logo%20CASBT.png" /></a></li>
-                <li>
-                    <a href="territoire.html">Le Territoire</a>
-                </li>
-                <li>
-                    <a href="elu.html">Les Elus CASBT</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <div class="pseudo-2"></div>
-            <div class="pseudo-3"></div>
-            <div class="pseudo-4"></div>
-            <button class="btnSearch">
-                <svg class="icon-search" width="28" height="29" viewBox="0 0 28 29" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M17.7203 17.388L21.9067 21.8282L19.9968 23.6289L15.7248 19.098C14.7009 19.6847 13.5146 20.02 12.25 20.02C8.38401 20.02 5.25 16.886 5.25 13.02C5.25 9.15403 8.38401 6.02002 12.25 6.02002C16.116 6.02002 19.25 9.15403 19.25 13.02C19.25 14.6722 18.6776 16.1907 17.7203 17.388ZM12.25 17.395C14.6662 17.395 16.625 15.4363 16.625 13.02C16.625 10.6038 14.6662 8.64502 12.25 8.64502C9.83375 8.64502 7.875 10.6038 7.875 13.02C7.875 15.4363 9.83375 17.395 12.25 17.395Z"
-                        fill="white" />
-                </svg>
-                <div class="text-wrapper-14">Rechercher</div>
-            </button>
-        </nav>
+      <nav class="navbar">
+        <a href="accueil.html"
+          ><img class="logo-casbt" src="img/logo%20CASBT.png"
+        /></a>
+        <ul>
+          <li><a href="territoire.html">Le Territoire</a></li>
+          <li><a href="elu.html">Les Elus</a></li>
+          <li><a href="#">Infos pratiques</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="btnSearch">
+          <svg
+            class="icon-search"
+            width="28"
+            height="29"
+            viewBox="0 0 28 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.7203 17.388L21.9067 21.8282L19.9968 23.6289L15.7248 19.098C14.7009 19.6847 13.5146 20.02 12.25 20.02C8.38401 20.02 5.25 16.886 5.25 13.02C5.25 9.15403 8.38401 6.02002 12.25 6.02002C16.116 6.02002 19.25 9.15403 19.25 13.02C19.25 14.6722 18.6776 16.1907 17.7203 17.388ZM12.25 17.395C14.6662 17.395 16.625 15.4363 16.625 13.02C16.625 10.6038 14.6662 8.64502 12.25 8.64502C9.83375 8.64502 7.875 10.6038 7.875 13.02C7.875 15.4363 9.83375 17.395 12.25 17.395Z"
+              fill="white"
+            />
+          </svg>
+          Rechercher
+        </button>
+      </nav>
+      <div id="searchbar">
+        <input type="search" placeholder="Rechercher..." />
+      </div>
     </header>
-</body>
-
+    <script src="js/file.js" type="text/javascript"></script>
+  </body>
 </html>

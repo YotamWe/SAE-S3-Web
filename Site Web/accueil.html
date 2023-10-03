@@ -1,36 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/accueil.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="icon" type="image/png" href="img/logo%20CASBT.png" />
+    <title>Accueil</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/accueil.css">
-    <title></title>
-</head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="accueil.html"
+          ><img class="logo-casbt" src="img/logo%20CASBT.png"
+        /></a>
+        <ul>
+          <li><a href="territoire.html">Le Territoire</a></li>
+          <li><a href="elu.html">Les Elus</a></li>
+          <li><a href="#">Infos pratiques</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="btnSearch">
+          <svg
+            class="icon-search"
+            width="28"
+            height="29"
+            viewBox="0 0 28 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.7203 17.388L21.9067 21.8282L19.9968 23.6289L15.7248 19.098C14.7009 19.6847 13.5146 20.02 12.25 20.02C8.38401 20.02 5.25 16.886 5.25 13.02C5.25 9.15403 8.38401 6.02002 12.25 6.02002C16.116 6.02002 19.25 9.15403 19.25 13.02C19.25 14.6722 18.6776 16.1907 17.7203 17.388ZM12.25 17.395C14.6662 17.395 16.625 15.4363 16.625 13.02C16.625 10.6038 14.6662 8.64502 12.25 8.64502C9.83375 8.64502 7.875 10.6038 7.875 13.02C7.875 15.4363 9.83375 17.395 12.25 17.395Z"
+              fill="white"
+            />
+          </svg>
+          Rechercher
+        </button>
+      </nav>
+      <div id="searchbar">
+        <input type="search" placeholder="Rechercher..." />
+      </div>
+    </header>
 
-<body>
-    <nav>
-        <img src="img/logo CASBT.png" alt="" class="logo">
-        <div class="lien-nav">
-            <ul>
-                <li class="pageActive"><a href=""> Accueil </a></li>
-                <li><a href="">Les Communes membres</a></li>
-                <li><a href="">Expériences</a></li>
-                <li><a href="">Infos pratiques</a></li>
-                <li><a href="">Les Élus CASBT</a></li>
-            </ul>
-        </div>
-        <img src="images/white_menu_icon.png" alt="" class="menu-hamburger">
-
-    </nav>
-    <!-----------------------------------------Fin de la nav --------------------------------------------->
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <form action="">
-        <input type="search" required>
-        <i class="fa fa-search"></i>
-    </form>
-</body>
-
+    <script src="js/file.js" type="text/javascript"></script>
+  </body>
 </html>
