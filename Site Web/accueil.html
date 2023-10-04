@@ -6,69 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
+
 <body>
     <!---------------------------------------------------MISE EN FORME DE L'ENTETE------------------------------------------------------------------------------>
 
     <header>
-        <img class="entete" src="img/accueil_background.png" alt="image entete">
-        <div class="text">
-            <h1>CASBT</h1>
-            <h3>Communauté d'Agglomération de Basse Terre</h3>
+        <nav class="navbar">
+            <a href="accueil.html"><img class="logo-casbt" src="img/logo%20CASBT.png" /></a>
+            <ul>
+                <li><a href="territoire.html">Le Territoire</a></li>
+                <li><a href="elu.html">Les Elus</a></li>
+                <li><a href="#">Infos pratiques</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="btnSearch">
+                <svg class="icon-search" width="28" height="29" viewBox="0 0 28 29" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.7203 17.388L21.9067 21.8282L19.9968 23.6289L15.7248 19.098C14.7009 19.6847 13.5146 20.02 12.25 20.02C8.38401 20.02 5.25 16.886 5.25 13.02C5.25 9.15403 8.38401 6.02002 12.25 6.02002C16.116 6.02002 19.25 9.15403 19.25 13.02C19.25 14.6722 18.6776 16.1907 17.7203 17.388ZM12.25 17.395C14.6662 17.395 16.625 15.4363 16.625 13.02C16.625 10.6038 14.6662 8.64502 12.25 8.64502C9.83375 8.64502 7.875 10.6038 7.875 13.02C7.875 15.4363 9.83375 17.395 12.25 17.395Z"
+                        fill="white" />
+                </svg>
+                Rechercher
+            </button>
+        </nav>
+        <div id="searchbar">
+            <input type="search" placeholder="Rechercher..." />
+        </div>
+        <div id="pres-accueil">
+            <img class="entete" src="img/accueil_background.png" alt="image entete">
+            <div class="text">
+                <h1>CASBT</h1>
+                <h3>Communauté d'Agglomération de Basse Terre</h3>
+            </div>
         </div>
     </header>
-<!-------------------------------------------------FIN MISE EN FORME DE L'ENTETE------------------------------------------------------------------------------>
+    <!-------------------------------------------------FIN MISE EN FORME DE L'ENTETE------------------------------------------------------------------------------>
 
     <div class="description">
         <h1>Qu'est ce que le CASBT?</h1>
-        <p classe="description-texte">La Communauté d'Agglomération Grand Sud Caraïbe est une structure regroupant plusieurs communes en Guadeloupe,
-            dans la région sud de l'île. Elle vise à coordonner la gestion de services publics et de projets communs, 
-            tels que les transports et l'aménagement du territoire. Cette entité permet aux communes de travailler ensemble pour 
+        <p classe="description-texte">La Communauté d'Agglomération Grand Sud Caraïbe est une structure regroupant
+            plusieurs communes en Guadeloupe,
+            dans la région sud de l'île. Elle vise à coordonner la gestion de services publics et de projets communs,
+            tels que les transports et l'aménagement du territoire. Cette entité permet aux communes de travailler
+            ensemble pour
             améliorer la qualité de vie de leurs habitants.</p>
     </div>
 
-   
-    <h1"> NOS ACTUALITES </h1>
-    <img class="imgactu" src="img/Actualités.png" alt="image actualites">
-    <div class="box">
-        
-        <article class="actualite1">
-            <p>Suite à une rupture de canalisation la distribution de l'eau sera interrompue le samedi 27 
-            février 2016 sur la commune de baillif et particulièrement dans les secteurs de CADET, BOURG, Cité CHAULET de 7h 
-            à 18h. madame le Président vous prie de bien l'excuser pour la gêne occasionnée.</p></article>
-        <article class="actualite2">
-            <p>Suite à une rupture de canalisation la distribution de l'eau sera interrompue le samedi 27 
-            février 2016 sur la commune de baillif et particulièrement dans les secteurs de CADET, BOURG, Cité CHAULET de 7h 
-            à 18h. madame le Président vous prie de bien l'excuser pour la gêne occasionnée.</p></article> 
-    </div>
-    <div class="box2">
-        <article class="actualite3">
-            <p>Suite à une rupture de canalisation la distribution de l'eau sera interrompue le samedi 27 
-            février 2016 sur la commune de baillif et particulièrement dans les secteurs de CADET, BOURG, Cité CHAULET de 7h 
-             à 18h. madame le Président vous prie de bien l'excuser pour la gêne occasionnée.</p></article>
-        <article class="actualite4">
-            <p>Suite à une rupture de canalisation la distribution de l'eau sera interrompue le samedi 27 
-            février 2016 sur la commune de baillif et particulièrement dans les secteurs de CADET, BOURG, Cité CHAULET de 7h 
-            à 18h. madame le Président vous prie de bien l'excuser pour la gêne occasionnée.</p></article>
-    </div>
-        
-    <img class="imgactu" src="img/Actualités.png" alt="image actualites">
 
-    <div id="villes">
+    <h1"> NOS ACTUALITES </h1>
+        <img class="imgactu" src="img/Actualités.png" alt="image actualites">
+        <div class="box">
+
+            <article class="actualite1">
+                <p>Suite à une rupture de canalisation la distribution de l'eau sera interrompue le samedi 27
+                    février 2016 sur la commune de baillif et particulièrement dans les secteurs de CADET, BOURG, Cité
+                    CHAULET de 7h
+                    à 18h. madame le Président vous prie de bien l'excuser pour la gêne occasionnée.</p>
+            </article>
+            <article class="actualite2">
+                <p>Suite à une rupture de canalisation la distribution de l'eau sera interrompue le samedi 27
+                    février 2016 sur la commune de baillif et particulièrement dans les secteurs de CADET, BOURG, Cité
+                    CHAULET de 7h
+                    à 18h. madame le Président vous prie de bien l'excuser pour la gêne occasionnée.</p>
+            </article>
+        </div>
+        <div class="box2">
+            <article class="actualite3">
+                <p>Suite à une rupture de canalisation la distribution de l'eau sera interrompue le samedi 27
+                    février 2016 sur la commune de baillif et particulièrement dans les secteurs de CADET, BOURG, Cité
+                    CHAULET de 7h
+                    à 18h. madame le Président vous prie de bien l'excuser pour la gêne occasionnée.</p>
+            </article>
+            <article class="actualite4">
+                <p>Suite à une rupture de canalisation la distribution de l'eau sera interrompue le samedi 27
+                    février 2016 sur la commune de baillif et particulièrement dans les secteurs de CADET, BOURG, Cité
+                    CHAULET de 7h
+                    à 18h. madame le Président vous prie de bien l'excuser pour la gêne occasionnée.</p>
+            </article>
+        </div>
+
+        <img class="imgactu" src="img/Actualités.png" alt="image actualites">
+
+        <div id="villes">
             <div class="ville"> ville 1 </div>
             <div class="ville"> ville 2 </div>
             <div class="ville"> ville 3 </div>
 
-    </div>
-    
+        </div>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <form action="">
-        <input type="search" required>
-        <i class="fa fa-search"></i>
-    </form>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+        <form action="">
+            <input type="search" required>
+            <i class="fa fa-search"></i>
+        </form>
+        <script src="js/file.js" type="text/javascript"></script>
 </body>
 
 </html>
