@@ -58,25 +58,43 @@ header .text {
   align-items: center;
 }
 
+#grpeTer{
+  max-width: 100%;
+  height: 0%; 
+  border: 1px solid red; 
+  margin-top: 2%;
+}
+
 #territoireBox {
-  display: flex;
-  width: 50%;
-  height: 300px;
+  position: relative;
+  width: 70vh;
+  height: 30vh;
   border-radius: 65px;
   background: #9ec2f4;
   text-align: center;
-  margin: 30px;
-  margin-left: 40%;
+  margin-left: 50%;
+  margin-top: 0;
 }
 
-
 #titleBox{
-  display: flex;
-  width: 25%;
-  height: 50px;
+  position: relative;
+  width: 40vh;
+  height: 10vh;
   border-radius: 65px;
   background: #33669d;
-  text-align: center;
-  margin-left: 30%;
   margin-top: 5%;
+  left: -10%;
+  top: -10%;
+  border: 1px solid red; 
+
+}
+
+#NatureText{
+  position: relative;
+  color: white;
+  font-size: 100%;
+  font-family: "Kaisei Decol", serif;
+  border: 1px solid red; 
+  text-align: center; 
+  vertical-align: middle;
 }
