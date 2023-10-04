@@ -57,3 +57,26 @@ header .text {
   justify-content: center;
   align-items: center;
 }
+
+#territoireBox {
+  display: flex;
+  width: 50%;
+  height: 300px;
+  border-radius: 65px;
+  background: #9ec2f4;
+  text-align: center;
+  margin: 30px;
+  margin-left: 40%;
+}
+
+
+#titleBox{
+  display: flex;
+  width: 25%;
+  height: 50px;
+  border-radius: 65px;
+  background: #33669d;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 5%;
+}
