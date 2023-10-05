@@ -67,16 +67,16 @@ header .text {
 #territoireBox {
   position: relative;
   width: 70vh;
-  height: 30vh;
+  height: 33vh;
   border-radius: 65px;
   background: #9ec2f4;
-  text-align: center;
   margin-left: 50%;
   margin-top: 0;
   box-shadow: 5px 5px 10px #a9a8a8;
 }
 
 #titleBox{
+  z-index: 2;
   position: relative;
   width: 40vh;
   height: 10vh;
@@ -99,16 +99,53 @@ header .text {
   display: flex;
   justify-content: center;
   align-self: center;
+  text-align: center;
 }
 
 #preserverBox {
   position: relative;
   width: 70vh;
-  height: 30vh;
+  height: 33vh;
   border-radius: 65px;
   background: #9ec2f4;
   text-align: center;
   margin-left: 10%;
   margin-top: 0;
   box-shadow: 5px 5px 10px #a9a8a8;
+}
+
+#terText{
+  width: 90%;
+  position: relative;
+  color: white;
+  font-size: 90%;
+  font-family: "Kaisei Decol", serif;
+  text-align: center;
+}
+
+#textBox{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  vertical-align: center;
+}
+
+#divCarte{
+  max-width: 100%;
+  height: 50vh; 
+  margin-top: 5%;
+  background-color: #33669d;
+}
+
+#CarteEntete{
+  top : 5%;
+  left: 2%; 
+  width: 20%;
+  position: relative;
+  color: white;
+  font-size: 160%;
+  font-family: "Kaisei Decol", serif;
+  background: #9ec2f4;
+  text-align: center;
+  border-radius: 65px;
 }
