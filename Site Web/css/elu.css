@@ -1091,7 +1091,7 @@ div {
 }
 
 .blank{
-  height: 70vh;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   position: relative;

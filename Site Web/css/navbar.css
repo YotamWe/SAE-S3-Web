@@ -54,7 +54,17 @@ body {
   left: 50%;
   top: 10%;
   transform: translate(-50%,-50%);
+  transition: width 0.1s ease;
 }
+
+.navbar.scrolled {
+  background-color: #106ab1;
+  width: 100%;
+  border-radius: 0;
+  position: fixed;
+  top: 4%;
+}
+
 .navbar .logo-casbt {
   object-fit: cover;
   max-width: 100px;
