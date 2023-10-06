@@ -11,11 +11,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+#pres-actualite{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header .entete {
   max-width: 100%; /*permet à l'image de suivre les formats*/
   height: auto;
 }
-header .text {
+.text {
   z-index: 1;
   position: absolute;
   text-align: center;
@@ -55,69 +61,32 @@ header .text {
   font-size: 18px; /* Ajustez la taille de la police selon vos besoins */
   line-height: 1.2; /* Ajustez l'espacement entre les lignes si nécessaire */
 }
-.box {
-  display: flex;
-  justify-content: space-between;
+
+article{
+  padding: 20px;
 }
-.box2 {
-  display: flex;
-  justify-content: space-between;
+
+#actu{
+  display : flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.actu1 {
-  width: 268.5px;
-  height: 106.376px;
-  flex-shrink: 0;
-  border-radius: 65px;
-  background: #33669d;
-  text-align: center;
-  margin: 30px;
-}
-.actualite1 {
-  width: 500px;
+.actualite {
+  width: 450px;
   height: 395px;
   flex-shrink: 0;
   border-radius: 65px;
   background: #9ec2f4;
   text-align: center;
   margin: 30px;
-  margin-left: 200px;
 }
-.actualite2 {
-  width: 500px;
-  height: 395px;
-  flex-shrink: 0;
-  border-radius: 65px;
-  background: #9ec2f4;
-  text-align: center;
-  margin: 30px;
-  margin-right: 200px;
-}
-.actualite4 {
-  width: 500px;
-  height: 395px;
-  flex-shrink: 0;
-  border-radius: 65px;
-  background: #9ec2f4;
-  text-align: center;
-  margin: 30px;
-  margin-right: 200px;
-}
-.actualite3 {
-  width: 500px;
-  height: 395px;
-  flex-shrink: 0;
-  border-radius: 65px;
-  background: #9ec2f4;
-  text-align: center;
-  margin: 30px;
-  margin-left: 200px;
-}
+
 #villes {
   display: flex;
   justify-content: space-around;
 }
 .ville {
-  width: 500px;
+  width: 400px;
   height: 395px;
   flex-shrink: 0;
   border-radius: 65px;
