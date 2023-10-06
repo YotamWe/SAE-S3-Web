@@ -59,9 +59,11 @@ header .text {
 }
 
 #grpeTer{
-  max-width: 100%;
-  height: 0%; 
-  margin-top: 3%;
+  width: 100%;
+  height: 60%; 
+  margin-top: 4%;
+  display: flex; 
+  align-items: center;
 }
 
 #territoireBox {
@@ -70,9 +72,29 @@ header .text {
   height: 33vh;
   border-radius: 65px;
   background: #9ec2f4;
-  margin-left: 50%;
-  margin-top: 0;
+  margin-left: 10%;
+  margin-top: 5%;
   box-shadow: 5px 5px 10px #a9a8a8;
+  transition: transform 0.3s;
+}
+
+#territoireBox:hover{
+  transform: scale(1.1);
+}
+
+#cascade{
+  margin-top: -3%; 
+  margin-left: 15%;
+  width: 30%;
+  height: 40vh;
+  position: relative;
+  border-radius: 65px;
+  transition: transform 0.3s;
+  box-shadow: 5px 5px 10px #a9a8a8;
+}
+
+#cascade:hover{
+  transform: scale(1.1);
 }
 
 #titleBox{
@@ -82,7 +104,6 @@ header .text {
   height: 10vh;
   border-radius: 65px;
   background: #33669d;
-  margin-top: 10%;
   left: -10%;
   top: -10%;
   display: flex;
@@ -108,10 +129,29 @@ header .text {
   height: 33vh;
   border-radius: 65px;
   background: #9ec2f4;
-  text-align: center;
-  margin-left: 10%;
-  margin-top: 0;
+  margin-left: 15%;
+  margin-top: -5%;
   box-shadow: 5px 5px 10px #a9a8a8;
+  transition: transform 0.3s;
+}
+
+#volcan{ 
+  margin-top: 2%; 
+  margin-left: 10%;
+  width: 30%;
+  height: 40vh;
+  position: relative;
+  border-radius: 65px;
+  transition: transform 0.3s;
+  box-shadow: 5px 5px 10px #a9a8a8;
+}
+
+#volcan:hover{
+  transform: scale(1.1);
+}
+
+#preserverBox:hover{
+  transform: scale(1.1);
 }
 
 #terText{
@@ -128,14 +168,16 @@ header .text {
   justify-content: center;
   align-self: center;
   vertical-align: center;
+  margin: 0 auto;
 }
 
 #divCarte{
+  margin-top: 10%;
+  margin: 0 auto;
   position: relative;
   display: flex;
   max-width: 90%;
   height: 70vh; 
-  background-color: #33669d;
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -144,21 +186,80 @@ header .text {
 
 #CarteEntete{
   margin-top: 10%;
-  top : 5%;
-  left: 2%; 
   width: 20%;
+  height: 30%;
   position: relative;
   color: white;
   font-size: 160%;
   font-family: "Kaisei Decol", serif;
-  background: #9ec2f4;
+  background: #33669d;
   text-align: center;
   border-radius: 65px;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  box-shadow: 5px 5px 10px #a9a8a8;
 }
 
 #map { 
   position: relative;
-  height: 70%; 
-  width: 50%;
-  border-radius: 1%;
+  height: 100%; 
+  width: 1000%;
+  border-radius: 2%;
+  box-shadow: 5px 5px 10px #a9a8a8;
+}
+
+/*Responsivité*/
+
+@media (max-width: 900px) {
+  #territoireBox {
+    position: relative;
+    width: 70vh;
+    height: 33vh;
+    border-radius: 65px;
+    background: #9ec2f4;
+    margin-left: 0%;
+    margin-top: 0;
+    box-shadow: 5px 5px 10px #a9a8a8;
+    margin: 0 auto;
+  }
+
+  #preserverBox {
+    position: relative;
+    width: 70vh;
+    height: 33vh;
+    border-radius: 65px;
+    background: #9ec2f4;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 0;
+    box-shadow: 5px 5px 10px #a9a8a8;
+    margin: 0 auto;
+  }
+
+  #CarteEntete{
+    margin-top: 10%;
+    width: 20%;
+    height: 30%;
+    position: relative;
+    color: white;
+    font-size: 90%;
+    font-family: "Kaisei Decol", serif;
+    background: #33669d;
+    text-align: center;
+    border-radius: 65px;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    box-shadow: 5px 5px 10px #a9a8a8;
+  }
+
+  header .text {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 70%;
+    font-size: 90%;
+    font-family: "Kaisei Decol", serif;
+  }
+
 }

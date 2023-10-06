@@ -1,8 +1,8 @@
-var map = L.map('map').setView([16.196719274648924, -61.546118023223855], 10);
+var map = L.map('map').setView([15.92089137885494, -61.637999775238015], 10);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    minZoom: 5,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    maxZoom: 12,
+    minZoom: 9,
+    //attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
 let xmlhttp = new XMLHttpRequest();
@@ -14,7 +14,7 @@ xmlhttp.onreadystatechange = function () {
             let geojson = JSON.parse(xmlhttp.responseText);
             let geojsonlayer = L.geoJSON(geojson, {
                 style: {
-                    "color": "white",
+                    "color": "blue",
                     "opacity": 1,
                     "fillColor": "blue",
                     "fillOpacity": 0.2
