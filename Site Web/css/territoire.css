@@ -131,16 +131,19 @@ header .text {
 }
 
 #divCarte{
-  max-width: 100%;
-  height: 50vh; 
-  margin-top: 5%;
+  position: relative;
+  display: flex;
+  max-width: 90%;
+  height: 70vh; 
   background-color: #33669d;
   justify-content: center;
+  align-items: center;
   align-self: center;
-  vertical-align: center;
+  text-align: center;
 }
 
 #CarteEntete{
+  margin-top: 10%;
   top : 5%;
   left: 2%; 
   width: 20%;
@@ -154,6 +157,8 @@ header .text {
 }
 
 #map { 
-  height: 50vh; 
-  width: 100%;
+  position: relative;
+  height: 70%; 
+  width: 50%;
+  border-radius: 1%;
 }
