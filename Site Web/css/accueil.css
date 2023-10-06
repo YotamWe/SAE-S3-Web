@@ -28,7 +28,7 @@ header .entete {
   color: white;
   width: 70%;
   font-size: 160%;
-  font-family: "Kaisei Decol", serif;
+  
 }
 /*.jjj{
     position: absolute;
@@ -41,27 +41,35 @@ header .entete {
     text-align: center; /* Alignement du texte 
 }*/
 .imgactu {
+  top: 1%;
   background-color: #9ec2f4;
   max-width: 100%; /*permet à l'image de suivre les formats*/
   height: auto;
   z-index: -6;
 }
-.description {
+#back{
   background-color: rgba(158, 194, 244, 1);
   padding: 40px;
   color: rgba(51, 102, 157, 1);
-  font-family: "Kaisei Decol", serif;
+}
+.description {
+  
   position: relative;
   top: 1%;
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
 }
-.description-texte {
-  writing-mode: vertical-rl; /* "vertical-rl" signifie écriture verticale de droite à gauche */
-  text-orientation: upright; /* Orienter le texte vers le haut */
-  white-space: nowrap; /* Éviter que le texte ne revienne à la ligne */
+.description .texte {
   font-size: 18px; /* Ajustez la taille de la police selon vos besoins */
   line-height: 1.2; /* Ajustez l'espacement entre les lignes si nécessaire */
+  border: 1px solid red;
+  width: 70%;
 }
-
+.description h1{
+  border: 1px solid red;
+  width: 30%;
+}
 article{
   padding: 20px;
 }
