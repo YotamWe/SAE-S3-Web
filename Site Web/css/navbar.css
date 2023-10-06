@@ -124,11 +124,50 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-/*-------------------Footer--------------------------*/
+#searchbar {
+  width: 85%;
+  position: relative;
+  display: none;
+  z-index: -1;
+  background-color: #106ab1;
+  border-radius: 38px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 30px;
+  transform: translateY(-200%);
+  transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+#searchbar.active {
+  transform: translate(0);
+}
 
+#searchbar input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background-color: #106ab1;
+  border: 1px solid red;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+#searchbar input::placeholder {
+  color: #b2becd;
+}
+
+
+
+
+
+
+/*-------------------Footer--------------------------*/
+footer{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Ajoutez un effet d'ombre lors du survol */
+}
 footer h3{
   color: black;
 }
+
+
 #section1{
   background-color: #f4f3f3;
 }
