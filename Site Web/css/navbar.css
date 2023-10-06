@@ -115,33 +115,110 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
-#searchbar {
-  width: 85%;
-  min-height: 50vh;
-  position: relative;
-  z-index: -1;
-  display: none;
-  background-color: #106ab1;
-  border-radius: 38px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 30px;
-  transform: translateY(-200%);
-  transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+/*-------------------Footer--------------------------*/
+
+footer h3{
+  color: black;
 }
-#searchbar.active {
-  transform: translate(0);
+#section1{
+  background-color: #f4f3f3;
+}
+.infos {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+.infos .item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 30%;
+}
+.infos .item.personne, .item.réseaux, .item.question {
+  padding: 10px;
 }
 
-#searchbar input {
+.infos .item.personne #text{
+  width: 70%;
+  color: black;
+}
+.infos .item.personne #categorie{
+  display: flex;
+  justify-content: center;
   width: 100%;
+  font: 500 13px/17.29px "Montserrat", sans-serif;
+}
+.infos .item.réseaux #icons-réseaux{
+  width: 40%;
+  flex-wrap: wrap;
+}
+
+.infos .item.question #mail{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infos .item.question #mail p{
+  padding: 10px;
+}
+.infos .item.personne #categorie p, .infos .item.question #mail p{
+  font : 700 10px/13px "Montserrat", sans-serif;
+  margin: 0 10px ;
+  color: #354bcf;
+}
+
+#section2{
+  background-color:  #33669d;
+}
+#section2 #actu{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  font: 400 19px "Montserrat", sans-serif;
+}
+#section2 select{ 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+#section3{
+  background-color: #071f32;
+  height: 15vh;
+}
+.RGPD {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   height: 100%;
-  outline: none;
-  background-color: #106ab1;
-  border: 1px solid red;
-  font-size: 2rem;
-  color: var(--color-white);
 }
-#searchbar input::placeholder {
-  color: #b2becd;
+.RGPD ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  list-style: none;
+  text-decoration: none;
 }
+.RGPD ul li {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.RGPD #droits {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1vh;
+}
+
+
