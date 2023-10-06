@@ -135,6 +135,9 @@ header .text {
   height: 50vh; 
   margin-top: 5%;
   background-color: #33669d;
+  justify-content: center;
+  align-self: center;
+  vertical-align: center;
 }
 
 #CarteEntete{
@@ -148,4 +151,9 @@ header .text {
   background: #9ec2f4;
   text-align: center;
   border-radius: 65px;
+}
+
+#map { 
+  height: 50vh; 
+  width: 100%;
 }
