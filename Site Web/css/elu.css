@@ -1090,6 +1090,46 @@ div {
   margin: 0 20px;
 }
 
+#profiles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: black;
+  width: 80%;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+#profiles .card:first-child{
+  width: 100%;
+}
+#profiles .card{
+  display: flex;
+  flex-direction: column;
+  background-color: #116ab133;
+  border-radius: 30px;
+  box-shadow: 10px 28px 40px #0000001a;
+  font-family: Roboto-Bold, Helvetica;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#profiles .card .infos{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#profiles .card .nom{
+  font-weight: 700;
+  font-size: 22px;
+}
+
+#profiles .card .titre{
+  font-size: 13px;
+  color: rgba(0,0,0,.5);
+}
+
+
 .blank{
   height: 100vh;
   display: flex;
