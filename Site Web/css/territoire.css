@@ -63,6 +63,7 @@ header .text {
   height: 60%; 
   margin-top: 4%;
   display: flex; 
+  justify-content: center;
   align-items: center;
 }
 
@@ -84,7 +85,7 @@ header .text {
 
 #cascade{
   margin-top: -3%; 
-  margin-left: 15%;
+  margin-left: -3%;
   width: 30%;
   height: 40vh;
   position: relative;
@@ -129,7 +130,7 @@ header .text {
   height: 33vh;
   border-radius: 65px;
   background: #9ec2f4;
-  margin-left: 15%;
+  margin-left: 3%;
   margin-top: -5%;
   box-shadow: 5px 5px 10px #a9a8a8;
   transition: transform 0.3s;
