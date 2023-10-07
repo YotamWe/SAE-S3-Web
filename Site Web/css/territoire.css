@@ -183,6 +183,7 @@ header .text {
   align-items: center;
   align-self: center;
   text-align: center;
+  z-index: 0;
 }
 
 #CarteEntete{

@@ -18,9 +18,10 @@ div {
 }
 
 header {
-  background-image: url(../img/elu-header-background.1557135.jpg);
+  background-image: url("../img/elu-header-background.1557135.jpg");
+  background-image: linear-gradient(to bottom, color(url("../img/elu-header-background.1557135.jpg")), #ffffff);
   background-size: cover;
-  height: 20vh;
+  height: 30vh;
   border: 3px solid green;
 }
 
@@ -28,6 +29,11 @@ header {
 #description {
   position: relative;
   color: black;
+  font-family: Roboto-Bold, Helvetica;
+}
+
+#description h1, #profiles .card:hover .nom, #profiles .icon a:hover{
+  color: #23569C;
 }
 
 #profiles {
@@ -42,6 +48,7 @@ header {
   text-align: center;
   padding: 20px;
   width: 80%;
+  font-family: Roboto-Bold, Helvetica;
 }
 
 #profiles .card:first-child {
@@ -55,7 +62,6 @@ header {
   flex-direction: column;
   background-color: #116ab133;
   border-radius: 30px;
-  font-family: Roboto-Bold, Helvetica;
   padding: 20px;
   width: 100%;
   justify-content: center;
@@ -73,6 +79,7 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
 }
 
 #profiles .card .nom {
@@ -83,4 +90,13 @@ header {
 #profiles .card .titre {
   font-size: 13px;
   color: rgba(0, 0, 0, .5);
+}
+#profiles .icon a{
+  text-decoration: none;
+  color: black;
+}
+
+#profiles .icon a:hover{
+  text-decoration: none;
+  color: #23569C;
 }
