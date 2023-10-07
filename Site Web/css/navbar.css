@@ -160,6 +160,53 @@ body {
   color: #b2becd;
 }
 
+/*.btnBurger {
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.line {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #f1f1f1;
+  transition: transform 0.3s ease-out,
+    opacity 0.1s ease-out;
+}
+
+.l1 {
+  transform: translateY(-10px)
+}
+
+.l3 {
+  transform: translateY(10px)
+}
+
+.btnBurger.active .l1 {
+  transform: translateY(0px) rotate(135deg);
+}
+
+.btnBurger.active .l2 {
+  opacity: 0;
+}
+
+.btnBurger.active .l3 {
+  transform: translateY(0px) rotate(-135deg);
+}*/
+
+
 
 
 
@@ -197,12 +244,7 @@ footer h3 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   width: 30%;
-}
-
-.infos .item.personne,
-.item.réseaux,
-.item.question {
-  padding: 10px;
+  padding: 20px;
 }
 
 .infos .item.personne #text {
@@ -218,13 +260,12 @@ footer h3 {
 }
 
 .infos .item.réseaux #icons-réseaux {
-  width: 40%;
+  width: 70%;
   flex-wrap: wrap;
-  color: black;
+  align-items: center;
 }
+
 .infos .item.réseaux i {
-  width: 40%;
-  flex-wrap: wrap;
   color: black;
   width: 33px;
   height: 33px;
@@ -259,6 +300,7 @@ footer h3 {
   padding: 10px;
   color: white;
   font: 400 19px "Montserrat", sans-serif;
+  align-items: center;
 }
 
 #section2 select {
@@ -291,6 +333,7 @@ footer h3 {
   width: 60%;
   list-style: none;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .RGPD ul li {
@@ -303,3 +346,41 @@ footer h3 {
   position: absolute;
   bottom: 1vh;
 }
+
+/*@media (max-width: 950px) {
+  .navbar {
+    visibility: hidden;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 50vw;
+    min-height: 100vh;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #111;
+    border-left: 1px solid #cfcfcf;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+  }
+
+  .navbar.active {
+    transform: translate(0);
+  }
+
+  .navbar a {
+    font-family: Quicksand, sans-serif;
+    color: #f1f1f1;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+
+  .btnBurger {
+    display: flex;
+  }
+}*/

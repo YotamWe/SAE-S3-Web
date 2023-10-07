@@ -13,3 +13,13 @@ window.addEventListener("scroll", function() {
       navbar.classList.remove("scrolled");  
   }
 });
+
+const hamburgerButton = document.querySelector(".btnBurger")
+const navigation = document.querySelector("nav")
+
+hamburgerButton.addEventListener("click", toggleNav)
+
+function toggleNav(){
+  hamburgerButton.classList.toggle("active")
+  navigation.classList.toggle("active")
+}
