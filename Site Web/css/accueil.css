@@ -30,16 +30,17 @@ header .entete {
   font-size: 160%;
   
 }
-/*.jjj{
-    position: absolute;
-    top: 50%;  Positionne le texte au centre vertical 
-    left: 50%; /* Positionne le texte au centre horizontal 
-    transform: translate(-50%, -50%); /* Centre parfaitement le texte 
-    color: white; /* Couleur du texte 
-    font-size: 24px; /* Taille de la police 
-    font-weight: bold; /* Gras 
-    text-align: center; /* Alignement du texte 
-}*/
+.textebulle{
+  position: relative;
+  color: white;
+  font-size: 100%;
+  font-family: "Kaisei Decol", serif;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
 .imgactu {
   top: 1%;
   background-color: #9ec2f4;
@@ -49,29 +50,40 @@ header .entete {
 }
 #back{
   background-color: rgba(158, 194, 244, 1);
-  padding: 40px;
+  padding: 60px;
   color: rgba(51, 102, 157, 1);
 }
 .description {
-  
   position: relative;
   top: 1%;
   display: flex;
-  border: 1px solid red;
   width: 100%;
 }
 .description .texte {
   font-size: 18px; /* Ajustez la taille de la police selon vos besoins */
   line-height: 1.2; /* Ajustez l'espacement entre les lignes si nécessaire */
-  border: 1px solid red;
-  width: 70%;
+  width: 50%;
+  text-align: justify;
+  
 }
 .description h1{
-  border: 1px solid red;
-  width: 30%;
+  width: 40%;
 }
 article{
   padding: 20px;
+}
+#TritreActu{
+  z-index: 2;
+  position: relative;
+  width: 40vh;
+  height: 10vh;
+  border-radius: 65px;
+  background: #33669d;
+  left: -10%;
+  top: -10%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 #actu{
@@ -80,22 +92,25 @@ article{
   flex-wrap: wrap;
 }
 .actualite {
-  width: 450px;
-  height: 395px;
+  width: 70vh;
+  height: 33vh;
   flex-shrink: 0;
   border-radius: 65px;
   background: #9ec2f4;
+  box-shadow: 5px 5px 10px #a9a8a8;
   text-align: center;
   margin: 30px;
+
 }
 
 #villes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
 }
 .ville {
-  width: 400px;
-  height: 395px;
+  width: 350px;
+  height: 345px;
   flex-shrink: 0;
   border-radius: 65px;
   background: #9ec2f4;
