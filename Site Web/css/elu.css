@@ -32,9 +32,7 @@ header {
   font-family: Roboto-Bold, Helvetica;
 }
 
-#description h1, #profiles .card:hover .nom, #profiles .icon a:hover{
-  color: #23569C;
-}
+
 
 #profiles {
   display: grid;
@@ -46,18 +44,14 @@ header {
   margin: 40px auto;
   flex-grow: 1;
   text-align: center;
-  padding: 20px;
   width: 80%;
   font-family: Roboto-Bold, Helvetica;
 }
 
-#profiles .card:first-child {
-  grid-column: 1 / 4;
-  grid-row: 1;
-  width: 100%;
-}
+
 
 #profiles .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #116ab133;
@@ -69,9 +63,14 @@ header {
   transition: transform 0.3s;
   box-shadow: 5px 5px 10px #a9a8a8;
 }
+#profiles .card:hover{
+  transform: scale(1.08);
+}
 
-#profiles .card:hover {
-  transform: scale(1.1);
+#profiles .card:first-child {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  width: 100%;
 }
 
 #profiles .card .infos {
@@ -80,23 +79,32 @@ header {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 
 #profiles .card .nom {
   font-weight: 700;
   font-size: 22px;
+  transition: color 0.3s;
 }
-
 #profiles .card .titre {
   font-size: 13px;
   color: rgba(0, 0, 0, .5);
 }
+
+#profiles .card:hover .nom, #profiles .icon a:hover{
+  color: #23569C;
+}
+#profiles .card .icon{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
 #profiles .icon a{
   text-decoration: none;
   color: black;
-}
-
-#profiles .icon a:hover{
-  text-decoration: none;
-  color: #23569C;
+  margin: 5px;
+  transition: color 0.3s;
 }
