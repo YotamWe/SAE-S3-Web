@@ -36,6 +36,8 @@
   scroll-behavior: smooth;
   text-decoration: none;
 }
+
+
 body {
   font-size: 1.1rem;
   color: var(--color-white);
@@ -53,15 +55,16 @@ body {
   position: absolute;
   left: 50%;
   top: 10%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   transition: width 0.1s ease;
+  border: 3px solid rgb(128, 0, 117);
 }
 
 .navbar.scrolled {
   width: 100%;
   border-radius: 0;
   position: fixed;
-  top: 4%;
+  top: 30px;
 }
 
 .navbar .logo-casbt {
@@ -91,10 +94,12 @@ body {
   border-radius: 10px;
   padding: 10px;
 }
+
 .navbar ul li:hover {
   background-color: #0d5892;
   transition: background-color 0.3s ease-in-out;
 }
+
 .navbar ul li a {
   color: white;
   font-weight: 700;
@@ -137,6 +142,7 @@ body {
   transform: translateY(-200%);
   transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
 }
+
 #searchbar.active {
   transform: translate(0);
 }
@@ -150,6 +156,7 @@ body {
   font-size: 2rem;
   color: var(--color-white);
 }
+
 #searchbar input::placeholder {
   color: #b2becd;
 }
@@ -160,24 +167,30 @@ body {
 
 
 /*-------------------Footer--------------------------*/
-footer{
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Ajoutez un effet d'ombre lors du survol */
+footer {
+  position: relative;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  /* Ajoutez un effet d'ombre lors du survol */
+  margin-top: 5%;
 }
-footer h3{
+
+footer h3 {
   color: black;
 }
 
 
-#section1{
+#section1 {
   background-color: #f4f3f3;
 }
+
 .infos {
   display: flex;
   justify-content: space-between;
   width: 60%;
   margin: 0 auto;
 }
-.infos .item{
+
+.infos .item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -186,51 +199,61 @@ footer h3{
   text-align: center;
   width: 30%;
 }
-.infos .item.personne, .item.réseaux, .item.question {
+
+.infos .item.personne,
+.item.réseaux,
+.item.question {
   padding: 10px;
 }
 
-.infos .item.personne #text{
+.infos .item.personne #text {
   width: 70%;
   color: black;
 }
-.infos .item.personne #categorie{
+
+.infos .item.personne #categorie {
   display: flex;
   justify-content: center;
   width: 100%;
   font: 500 13px/17.29px "Montserrat", sans-serif;
 }
-.infos .item.réseaux #icons-réseaux{
+
+.infos .item.réseaux #icons-réseaux {
   width: 40%;
   flex-wrap: wrap;
 }
 
-.infos .item.question #mail{
+.infos .item.question #mail {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.infos .item.question #mail p{
+
+.infos .item.question #mail p {
   padding: 10px;
 }
-.infos .item.personne #categorie p, .infos .item.question #mail p{
-  font : 700 10px/13px "Montserrat", sans-serif;
-  margin: 0 10px ;
+
+.infos .item.personne #categorie p,
+.infos .item.question #mail p {
+  font: 700 10px/13px "Montserrat", sans-serif;
+  margin: 0 10px;
   color: #354bcf;
 }
 
-#section2{
-  background-color:  #33669d;
+#section2 {
+  background-color: #33669d;
 }
-#section2 #actu{
+
+#section2 #actu {
   display: flex;
   justify-content: center;
   padding: 10px;
   color: white;
   font: 400 19px "Montserrat", sans-serif;
 }
-#section2 select{ 
+
+#section2 select {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -238,10 +261,11 @@ footer h3{
   margin: 10px;
 }
 
-#section3{
+#section3 {
   background-color: #071f32;
   height: 15vh;
 }
+
 .RGPD {
   position: relative;
   display: flex;
@@ -252,6 +276,7 @@ footer h3{
   font-weight: 700;
   height: 100%;
 }
+
 .RGPD ul {
   display: flex;
   justify-content: space-between;
@@ -259,14 +284,14 @@ footer h3{
   list-style: none;
   text-decoration: none;
 }
+
 .RGPD ul li {
   font-size: 10px;
   text-transform: uppercase;
 }
+
 .RGPD #droits {
   font-size: 1rem;
   position: absolute;
   bottom: 1vh;
 }
-
-
