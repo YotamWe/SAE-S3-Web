@@ -44,6 +44,7 @@ header {
   text-align: center;
   width: 80%;
   font-family: Roboto-Bold, Helvetica;
+
 }
 
 
@@ -61,7 +62,8 @@ header {
   transition: transform 0.3s;
   box-shadow: 5px 5px 10px #a9a8a8;
 }
-#profiles .card:hover{
+
+#profiles .card:hover {
   transform: scale(1.08);
 }
 
@@ -86,23 +88,36 @@ header {
   font-size: 22px;
   transition: color 0.3s;
 }
+
 #profiles .card .titre {
   font-size: 13px;
   color: rgba(0, 0, 0, .5);
 }
 
-#profiles .card:hover .nom, #profiles .icon a:hover{
-  color: #23569C;
+#profiles .card:hover .nom,
+#profiles .icon a:hover {
+  color: var(--color-blue1);
 }
-#profiles .card .icon{
+
+#profiles .card .icon {
   position: absolute;
   display: flex;
   justify-content: center;
   bottom: 0;
 }
-#profiles .icon a{
+
+#profiles .icon a {
   text-decoration: none;
   color: black;
   margin: 5px;
   transition: color 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+
+  #profiles {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
 }
