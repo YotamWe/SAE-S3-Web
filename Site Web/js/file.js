@@ -14,12 +14,12 @@ window.addEventListener("scroll", function() {
   }
 });
 
-const hamburgerButton = document.querySelector(".btnBurger")
-const navigation = document.querySelector("nav")
+const hamburgerButton = document.querySelector(".btnBurger");
+const navigation = document.querySelector("nav");
 
-hamburgerButton.addEventListener("click", toggleNav)
+hamburgerButton.addEventListener("click", toggleNav);
 
 function toggleNav(){
-  hamburgerButton.classList.toggle("active")
-  navigation.classList.toggle("active")
+  hamburgerButton.classList.toggle("active");
+  navigation.classList.toggle("active");
 }
