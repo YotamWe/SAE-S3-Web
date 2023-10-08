@@ -39,7 +39,6 @@ header {
   grid-gap: 5vh;
   justify-content: center;
   color: black;
-  border: 0px solid red;
   margin: 40px auto;
   flex-grow: 1;
   text-align: center;
