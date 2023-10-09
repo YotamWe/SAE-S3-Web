@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="icon" type="image/png" href="img/logo%20CASBT.png" />
+    <script
+      src="https://kit.fontawesome.com/5a3688d8aa.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -49,28 +53,154 @@
         <input type="search" placeholder="Rechercher..." />
       </div>
     </header>
-    <section>
-      <div class="pseudo">
-        <p>notre bureau principal</p>
-        <p>SoHo 94 rue Broadway New York, NY 1001</p>
-      </div>
-    </section>
-    <form>
-      <p class="titreFormulaire">N'hésitez pas à nous contacter !</p>
-      <input type="text" placeholder="Nom" name="nom" /><br />
-      <input type="email" placeholder="Email" name="email" /><br />
-      <input type="text" placeholder="Objet" name="sujet" /><br />
-      <textarea
-        class="message"
-        name="message"
-        placeholder="Votre message"
-        rows="5"
-        cols="33"
-      ></textarea
-      ><br />
-      <input type="submit" value="Envoyez" />
-    </form>
+    <main>
+      <form>
+        <p class="titreFormulaire">N'hésitez pas à nous contacter !</p>
+        <input type="text" placeholder="Nom" name="nom" /><br />
+        <input type="email" placeholder="Email" name="email" /><br />
+        <input type="text" placeholder="Objet" name="sujet" /><br />
+        <textarea
+          class="message"
+          name="message"
+          placeholder="Votre message"
+          rows="5"
+          cols="33"
+        ></textarea
+        ><br />
+        <input type="submit" value="Envoyez" />
+      </form>
+      <section id="infos">
+        <div class="pseudo bureau">
+          <h3>notre bureau principal</h3>
+          <p>
+            Grand Sud Caraïbe 12 rue Bébian 97100 Basse-Terre, du lundi au
+            vendredi, de 8h00 à 14h00.
+          </p>
+        </div>
+        <div class="pseudo telephone">
+          <h3>numéro de téléphone</h3>
+          <p>05 90 99 63 20</p>
+        </div>
+        <div class="pseudo e-mail">
+          <h3>e-mail</h3>
+          <p>environnement-durable@casbt.gp</p>
+        </div>
+        <div class="pseudo">
+          <h3>notre bureau principal</h3>
+          <p>SoHo 94 rue Broadway New York, NY 1001</p>
+        </div>
+      </section>
+    </main>
 
+    <footer>
+      <section id="section1">
+        <div class="infos">
+          <div class="item personne">
+            <h3>Vous êtes...</h3>
+            <p id="text">
+              Accédez à des actualités et informations pratiques par profil
+            </p>
+            <div id="categorie">
+              <a
+                href="https://www.grandsudcaraibe.fr/category/professionnels/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><p class="txtBlue">PROFESSIONNEL</p></a
+              >
+              <a
+                href="https://www.grandsudcaraibe.fr/category/touristes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><p class="txtBlue">TOURISTE</p></a
+              >
+              <a
+                href="https://www.grandsudcaraibe.fr/category/etudiants/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><p class="txtBlue">ÉTUDIANT</p></a
+              >
+            </div>
+          </div>
+          <div class="item réseaux">
+            <h3>Sur les réseaux</h3>
+            <div id="icons-réseaux">
+              <a
+                href="https://fr-fr.facebook.com/CA.GrandSudCaraibe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/cagrandsudcaraibe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/grand-sud-cara%C3%AFbe/?originalSubdomain=gp"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://twitter.com/grandsudcaraibe"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@grandsudcaraibe?themeRefresh=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+          <div class="item question">
+            <h3>Une question ?</h3>
+            <div id="mail">
+              <p class="txtBlue">CONTACTEZ NOUS PAR EMAIL</p>
+              <a href="contact.html"><p class="txtBlue">@ASKCASBT</p></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <div id="actu">
+          <p>Retrouvez les actualités de votre commune</p>
+          <select>
+            <option value="">Sélectionnez votre commune</option>
+            <option value="baillif">Baillif</option>
+            <option value="Basse-Terre">Basse-Terre</option>
+            <option value="bouillante">Bouillante</option>
+            <option value="Capesterre-Belle-Eau">Capesterre-Belle-Eau</option>
+            <option value="Gourbeyre">Gourbeyre</option>
+            <option value="Saint-Claude">Saint-Claude</option>
+            <option value="Terre-de-Bas">Terre-de-Bas</option>
+            <option value="Terre-de-Haut">Terre-de-Haut</option>
+            <option value="Trois-Rivières">Trois-Rivières</option>
+            <option value="Gourbeyre">Vieux-Fort</option>
+            <option value="vieux-habitants">Vieux-Habitants</option>
+          </select>
+        </div>
+      </section>
+      <section id="section3">
+        <div class="RGPD">
+          <ul>
+            <li>Mentions légales</li>
+            <li>Accessibilité</li>
+            <li>Presse</li>
+            <li>Open Data</li>
+            <li>Politique de cookies</li>
+            <li>Plan du site</li>
+          </ul>
+          <div id="droits">© Copyright 2023 CASBT</div>
+        </div>
+      </section>
+    </footer>
     <script src="js/file.js" type="text/javascript"></script>
   </body>
 </html>
