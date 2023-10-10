@@ -159,17 +159,17 @@ header .text {
   width: 90%;
   position: relative;
   color: white;
-  font-size: 90%;
+  font-size: 100%;
   font-family: "Kaisei Decol", serif;
   text-align: center;
+  vertical-align: center;
+  margin : 0 0; 
 }
 
 #textBox{
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  vertical-align: center;
-  margin: 0 auto;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 
 #divCarte{
@@ -212,7 +212,7 @@ header .text {
 
 /*Responsivité*/
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
   #grpeTer{
     display: block;
