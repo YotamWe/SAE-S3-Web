@@ -12,14 +12,8 @@ body {
   overflow-x: hidden;
 }
 
-
-div {
-  border: 0px solid red;
-}
-
 header {
   background-image: url("../img/elu-header-background.1557135.jpg");
-  background-image: linear-gradient(to bottom, color(url("../img/elu-header-background.1557135.jpg")), #ffffff);
   background-size: cover;
   height: 30vh;
 }
@@ -38,7 +32,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5vh;
   justify-content: center;
-  color: black;
+  color: var(--color-black);
   margin: 40px auto;
   flex-grow: 1;
   text-align: center;
@@ -91,7 +85,7 @@ header {
 
 #profiles .card .titre {
   font-size: 13px;
-  color: rgba(0, 0, 0, .5);
+  color: var(  --color-grey-3);
 }
 
 #profiles .card:hover .nom,
@@ -108,7 +102,7 @@ header {
 
 #profiles .icon a {
   text-decoration: none;
-  color: black;
+  color: var(--color-black);
   margin: 5px;
   transition: color 0.3s;
 }
