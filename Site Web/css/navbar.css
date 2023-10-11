@@ -44,7 +44,7 @@ body {
   font-size: 1.1rem;
   color: var(--color-white);
   overflow-x: hidden;
-  background-color: var(--color-grey-5);
+  background-color: var(--color-white);
 }
 
 .theme-btn {
@@ -453,9 +453,7 @@ footer h3 {
     display: flex;
     z-index: 2;
   }
-}
 
-@media screen and (max-width: 600px) {
   footer .infos {
     flex-direction: column;
     width: 100%;
@@ -546,31 +544,19 @@ footer h3 {
   
   #section2 {
     background-color: #33669d;
-  }
+    flex
+  }*/
   
   #section2 #actu {
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    color: white;
-    font: 400 19px "Montserrat", sans-serif;
-    align-items: center;
-  }
-  
-  #section2 select {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin: 10px;
+    flex-direction: column;
   }
   
   #section3 {
-    background-color: #071f32;
-    height: 15vh;
+    height: min-content;
   }
   
-  .RGPD {
+  /*.RGPD {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -579,25 +565,21 @@ footer h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     height: 100%;
-  }
+  }*/
   
   .RGPD ul {
     display: flex;
-    justify-content: space-between;
-    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     text-decoration: none;
     margin-top: 10px;
+    margin-bottom: 10vh;
+
   }
   
   .RGPD ul li {
-    font-size: 10px;
-    text-transform: uppercase;
+    padding: 10px;
   }
-  
-  .RGPD #droits {
-    font-size: 1rem;
-    position: absolute;
-    bottom: 1vh;
-  }*/
 }
