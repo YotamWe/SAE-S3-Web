@@ -20,8 +20,16 @@ const navigation = document.querySelector("nav");
 hamburgerButton.addEventListener("click", toggleNav);
 
 function toggleNav(){
+  if (document.body.style.overflowY == "hidden"){
+    document.body.style.overflowY = "visible"; 
+  }
+  else{
+    document.body.style.overflowY = "hidden";
+  }
   hamburgerButton.classList.toggle("active");
   navigation.classList.toggle("active");
+
+
 }
 
 const themeBtn = document.querySelector(".theme-btn");
