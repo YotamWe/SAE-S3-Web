@@ -101,7 +101,6 @@ header .text {
 }
 
 #titleBox{
-  z-index: 2;
   position: relative;
   width: 40vh;
   height: 10vh;
