@@ -78,7 +78,7 @@ header .text {
   margin-left: 10%;
   margin-top: 5%;
   box-shadow: 5px 5px 10px #a9a8a8;
-  transition: transform 0.3s;
+  transition: transform 0.3s; 
 }
 
 #territoireBox:hover{
@@ -226,13 +226,16 @@ header .text {
 .portfolios .portfolio-item {
   position: relative;
   border-radius: 15px;
+  transition: transform 0.3s;
 }
 .portfolios .portfolio-item img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 15px;
+  box-shadow: 5px 5px 10px #a9a8a8;
 }
+
 .portfolios .portfolio-item .hover-items {
   width: 100%;
   height: 100%;
@@ -249,6 +252,7 @@ header .text {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
 }
+
 .portfolios .portfolio-item .hover-items h3 {
   font-size: 1.5rem;
   color: var(--color-white);
@@ -297,6 +301,11 @@ header .text {
 .portfolio-item:hover .hover-items {
   opacity: 1;
   transform: scale(1);
+}
+
+
+.portfolios .portfolio-item:hover {
+  transform: scale(1.1);
 }
 
 /*Responsivité*/
