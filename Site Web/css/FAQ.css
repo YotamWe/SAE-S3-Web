@@ -14,10 +14,6 @@ main {
     margin-top: 20px;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
 h1, h2, h3 {
     margin: 0 0 10px;
 }
@@ -36,10 +32,6 @@ article {
     padding: 20px;
 }
 
-footer {
-    padding: 20px;
-    text-align: center;
-}
 
 /* Couleurs */
 
@@ -64,10 +56,6 @@ article {
     background-color: #f7f7f7;
 }
 
-footer {
-    background-color: #000;
-    color: #fff;
-}
 
 /* Transitions */
 
