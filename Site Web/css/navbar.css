@@ -178,7 +178,7 @@ body {
   transition-delay: 0.5s;
 }
 
-.input::placeholder, i{
+.input::placeholder{
   color: white;
 }
 
