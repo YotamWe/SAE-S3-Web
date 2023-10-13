@@ -1,10 +1,4 @@
-let searchbar = document.getElementById("searchbar");
-function divSearch() {
-  searchbar.classList.toggle("active");
-}
-
-document.getElementById("btnSearch").addEventListener("click", divSearch);
-
+const navbar = document.querySelector("nav");
 window.addEventListener("scroll", function() {
   const navbar = document.querySelector("nav");
   if (window.scrollY > 0 && window.scrollY >= navbar.offsetHeight) {
@@ -17,6 +11,7 @@ window.addEventListener("scroll", function() {
 const hamburgerButton = document.querySelector(".btnBurger");
 const navigation = document.querySelector("nav");
 
+let accueilCreated = false;
 hamburgerButton.addEventListener("click", toggleNav);
 
 function toggleNav(){
@@ -28,9 +23,37 @@ function toggleNav(){
   }
   hamburgerButton.classList.toggle("active");
   navigation.classList.toggle("active");
+  const navbar = document.querySelector("nav");
 
+
+  if (!accueilCreated) {
+
+    let accueil = document.createElement("li");
+    accueil.id = "accueil";
+    let a  = document.createElement("a");
+    a.textContent = "Accueil";
+    a.href = "accueil.html";
+    let ul = navbar.querySelector("ul");
+    accueil.appendChild(a);
+    //ul.appendChild(accueil);
+    ul.prepend(accueil);
+    // Mise à jour de l'état de l'input
+    accueilCreated = true;
+
+  }
 
 }
+
+window.addEventListener("resize", function() {
+  // Vérification de la taille de la page
+  let width = window.innerWidth;
+  // Si la taille de la page atteint le niveau souhaité
+  if (width > 950) {
+    // Suppression de l'élément
+    document.getElementById("accueil").remove();
+    accueilCreated = false;
+  }
+});
 
 const themeBtn = document.querySelector(".theme-btn");
 const icon = themeBtn.querySelector("i");
@@ -44,6 +67,13 @@ themeBtn.addEventListener("click", () => {
         icon.classList.remove("bi-moon-fill");
         icon.classList.add("bi-brightness-high-fill");
       }
-      /*fa-solid fa-moon*/
       
+});
+
+const searchBarContainerEl = document.querySelector(".search-bar-container");
+
+const magnifierEl = document.querySelector("#magnifier");
+
+magnifierEl.addEventListener("click", () => {
+  searchBarContainerEl.classList.toggle("active");
 });

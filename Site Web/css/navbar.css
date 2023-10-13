@@ -73,7 +73,7 @@ body {
 
 
 .navbar {
-  width: 85%;
+  width: 90%;
   display: flex;
   background-color: var(--color-blueNavbar);
   border-radius: 38px;
@@ -135,59 +135,65 @@ body {
   font-family: "Kaisei Decol-Bold", serif;
 }
 
-#btnSearch {
+
+
+.search-bar-container {
   display: flex;
-  border-radius: 10px;
-  background-color: #106ab1;
-  color: var(--color-white);
-  font-family: "Kaisei Decol-Bold", serif;
-  font-size: 20px;
-  font-weight: 700;
-  left: 100px;
-  margin: auto 20px;
-  padding: 10px;
   align-items: center;
-  justify-content: space-between;
-  border: none;
-  transition: background-color 0.3s ease-in-out;
-}
-
-#btnSearch:hover {
-  background-color: var(--color-blue0);
-  cursor: pointer;
-}
-
-#searchbar {
-  width: 85%;
+  background-color: #040a51;
+  padding: 5px;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),
+    -2px -2px 10px #43f4df;
+  margin: auto 20px;
   position: relative;
-  display: none;
-  z-index: -1;
-  background-color: #106ab1;
-  border-radius: 38px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 30px;
-  transform: translateY(-200%);
-  transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+  transition: width 1s;
 }
 
-#searchbar.active {
-  transform: translate(0);
+#magnifier {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
 }
 
-#searchbar input {
+.mic-icon {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  transition: width 0.4s;
+  transition-delay: 0.5s;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  margin: 10px 50px;
   width: 100%;
-  height: 100%;
   outline: none;
-  background-color: #106ab1;
-  border: 1px solid red;
-  font-size: 2rem;
-  color: var(--color-white);
+  color: white;
+  transition: width 1s;
+  transition-delay: 0.5s;
 }
 
-#searchbar input::placeholder {
-  color: #b2becd;
+.input::placeholder, i{
+  color: white;
 }
+
+.active.search-bar-container {
+  width: 50px;
+}
+
+.active .input {
+  width: 0;
+}
+
+.active .mic-icon {
+  width: 0;
+}
+
 
 .btnBurger {
   position: fixed;
@@ -210,7 +216,7 @@ body {
   display: block;
   width: 100%;
   height: 2px;
-  background: #f1f1f1;
+  background: #000000;
   transition: transform 0.3s ease-out,
     opacity 0.1s ease-out;
 }
@@ -442,10 +448,6 @@ footer h3 {
   }
 
   .logo-casbt {
-    display: none;
-  }
-
-  #btnSearch {
     display: none;
   }
 
