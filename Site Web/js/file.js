@@ -12,8 +12,6 @@ window.addEventListener("scroll", function () {
 
 /******************************************************************************************************** */
 
-
-
 /*Ajout d'accueil dans la navbar quand l'écran rétrécit + toggle menu-hamburger active*/
 
 const hamburgerButton = document.querySelector(".btnBurger");
@@ -45,9 +43,7 @@ function toggleNav() {
 
 hamburgerButton.addEventListener("click", toggleNav);
 
-
 /******************************************************************************************************** */
-
 
 /*Suppression d'accueil dans la navbar quand l'écran s'agrandit*/
 window.addEventListener("resize", function () {
@@ -61,9 +57,7 @@ window.addEventListener("resize", function () {
   }
 });
 
-
 /******************************************************************************************************** */
-
 
 /*Thème sombre / thème clair*/
 const themeBtn = document.querySelector(".theme-btn");

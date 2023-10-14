@@ -38,7 +38,8 @@
 }
 
 header .entete {
-  max-width: 100%; /*permet à l'image de suivre les formats*/
+  max-width: 100%;
+  /*permet à l'image de suivre les formats*/
   opacity: 0.8;
   height: auto;
 }
@@ -60,11 +61,11 @@ header .text {
   align-items: center;
 }
 
-#grpeTer{
+#grpeTer {
   width: 100%;
-  height: 60%; 
+  height: 60%;
   margin-top: 4%;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -78,15 +79,15 @@ header .text {
   margin-left: 10%;
   margin-top: 5%;
   box-shadow: 5px 5px 10px #a9a8a8;
-  transition: transform 0.3s; 
+  transition: transform 0.3s;
 }
 
-#territoireBox:hover{
+#territoireBox:hover {
   transform: scale(1.1);
 }
 
-#cascade{
-  margin-top: -3%; 
+#cascade {
+  margin-top: -3%;
   margin-left: -3%;
   width: 30%;
   height: 40vh;
@@ -96,11 +97,11 @@ header .text {
   box-shadow: 5px 5px 10px #a9a8a8;
 }
 
-#cascade:hover{
+#cascade:hover {
   transform: scale(1.1);
 }
 
-#titleBox{
+#titleBox {
   position: relative;
   width: 40vh;
   height: 10vh;
@@ -113,7 +114,7 @@ header .text {
   align-self: center;
 }
 
-#NatureText{
+#NatureText {
   position: relative;
   color: white;
   font-size: 100%;
@@ -137,8 +138,8 @@ header .text {
   transition: transform 0.3s;
 }
 
-#volcan{ 
-  margin-top: 2%; 
+#volcan {
+  margin-top: 2%;
   margin-left: 10%;
   width: 30%;
   height: 40vh;
@@ -148,15 +149,15 @@ header .text {
   box-shadow: 5px 5px 10px #a9a8a8;
 }
 
-#volcan:hover{
+#volcan:hover {
   transform: scale(1.1);
 }
 
-#preserverBox:hover{
+#preserverBox:hover {
   transform: scale(1.1);
 }
 
-#terText{
+#terText {
   width: 90%;
   position: relative;
   color: white;
@@ -164,22 +165,22 @@ header .text {
   font-family: "Kaisei Decol", serif;
   text-align: center;
   vertical-align: center;
-  margin : 0 0; 
+  margin: 0 0;
 }
 
-#textBox{
-  display: flex; 
-  justify-content: center; 
+#textBox {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-#divCarte{
+#divCarte {
   margin-top: 10%;
   margin: 0 auto;
   position: relative;
   display: flex;
   max-width: 90%;
-  height: 70vh; 
+  height: 70vh;
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -187,7 +188,7 @@ header .text {
   z-index: 0;
 }
 
-#CarteEntete{
+#CarteEntete {
   margin-top: 10%;
   width: 20%;
   height: 30%;
@@ -203,9 +204,9 @@ header .text {
   box-shadow: 5px 5px 10px #a9a8a8;
 }
 
-#map { 
+#map {
   position: relative;
-  height: 100%; 
+  height: 100%;
   width: 1000%;
   border-radius: 2%;
   box-shadow: 5px 5px 10px #a9a8a8;
@@ -223,11 +224,13 @@ header .text {
   margin-top: 0;
   margin: 5%;
 }
+
 .portfolios .portfolio-item {
   position: relative;
   border-radius: 15px;
   transition: transform 0.3s;
 }
+
 .portfolios .portfolio-item img {
   width: 100%;
   height: 300px;
@@ -258,22 +261,24 @@ header .text {
   color: var(--color-white);
   margin-bottom: 1.5rem;
 }
-.portfolios .portfolio-item .hover-items h3 a{
+
+.portfolios .portfolio-item .hover-items h3 a {
   color: white;
   vertical-align: center;
   display: flex;
   justify-content: center;
-} 
+}
 
-.portfolios .portfolio-item .hover-items h3:hover a{
+.portfolios .portfolio-item .hover-items h3:hover a {
   color: var(--color-grey-6);
-} 
+}
 
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .portfolios .portfolio-item .hover-items .icons .icon {
   background-color: var(--color-primary);
   border-radius: 50%;
@@ -286,14 +291,17 @@ header .text {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
+
 .portfolios .portfolio-item .hover-items .icons .icon i {
   font-size: 1.5rem;
   color: var(--color-white);
   margin: 0 1rem;
 }
+
 .portfolios .portfolio-item .hover-items .icons .icon:hover {
   background-color: var(--color-white);
 }
+
 .portfolios .portfolio-item .hover-items .icons .icon:hover i {
   color: var(--color-primary);
 }
@@ -312,10 +320,10 @@ header .text {
 
 @media (max-width: 950px) {
 
-  #grpeTer{
+  #grpeTer {
     display: block;
     width: 100%;
-    height: 60%; 
+    height: 60%;
     margin-top: 4%;
     justify-content: center;
     align-items: center;
@@ -345,29 +353,32 @@ header .text {
     box-shadow: 5px 5px 10px #a9a8a8;
     margin: 0 auto;
   }
-#volcan{ 
-  margin-top: 0; 
-  margin-left: 0;
-  width: 0%;
-  height: 0%;
-  position: relative;
-  border-radius: 65px;
-  transition: transform 0.3s;
-  box-shadow: 5px 5px 10px #a9a8a8;
-  margin: 0 auto;
-}
-#cascade{
-  margin-top: 0; 
-  margin-left: 0;
-  width: 0%;
-  height: 0%;
-  position: relative;
-  border-radius: 65px;
-  transition: transform 0.3s;
-  box-shadow: 5px 5px 10px #a9a8a8;
-  margin: 0 auto;
-}
-  #CarteEntete{
+
+  #volcan {
+    margin-top: 0;
+    margin-left: 0;
+    width: 0%;
+    height: 0%;
+    position: relative;
+    border-radius: 65px;
+    transition: transform 0.3s;
+    box-shadow: 5px 5px 10px #a9a8a8;
+    margin: 0 auto;
+  }
+
+  #cascade {
+    margin-top: 0;
+    margin-left: 0;
+    width: 0%;
+    height: 0%;
+    position: relative;
+    border-radius: 65px;
+    transition: transform 0.3s;
+    box-shadow: 5px 5px 10px #a9a8a8;
+    margin: 0 auto;
+  }
+
+  #CarteEntete {
     margin-top: 10%;
     width: 20%;
     height: 30%;
@@ -402,4 +413,3 @@ header .text {
   }
 
 }
-
