@@ -38,26 +38,53 @@ header #titre::after {
   animation: blink 1s step-end infinite;
 }
 
-@keyframes blink {
-  from, to {
-      color: transparent
-  }
-  50% {
-      color: rgb(255, 255, 255);
-  }
-}
 
-.vid{
+
+.vid {
   width: 100%;
   height: 100%;
   z-index: -4;
 }
 
-.vid video{
+.vid video {
   width: 100%;
   height: 100%;
   object-fit: fill;
   opacity: 0.9;
+}
+
+.explication {
+  color: black;
+
+  width: 100%;
+  background: linear-gradient(90deg, rgba(53, 46, 171, 1) 0%, rgba(125, 125, 255, 1) 35%, rgba(97, 135, 255, 0.6112570028011204) 100%);
+  padding: 10vh;
+  margin-top: 10px;
+}
+
+.explication .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 30px;
+}
+
+
+.explication .container .text-container {
+  padding: 20px;
+  font-family: Dejavu Sans, Arial, Verdana, sans-serif;
+}
+.explication .container .text-container h1{
+  background-color: #116ab133;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+
+.explication .container .text-container p{
+  padding: 20px;
+  text-align: justify;
 }
 
 
@@ -119,7 +146,7 @@ header #titre::after {
 
 #profiles .card .titre {
   font-size: 13px;
-  color: var(  --color-grey-3);
+  color: var(--color-grey-3);
 }
 
 #profiles .card:hover .nom,

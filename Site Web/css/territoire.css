@@ -5,38 +5,6 @@
   list-style: none;
 }
 
-:root {
-  --color-primary: #191d2b;
-  --color-secondary: #116ab133;
-  --color-white: #ffffff;
-  --color-black: #000;
-  --color-blue0: #071f32;
-  --color-blue1: #23569C;
-  --color-blueNavbar: #106ab1;
-  --color-grey-2: #b2becd;
-  --color-grey-3: #6c7983;
-  --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
-  --color-grey-6: #12181b;
-  --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
-}
-
-.dark-mode {
-  --color-primary: #191d2b;
-  --color-secondary: #0daafe;
-  --color-white: #000000;
-  --color-black: #ffffff;
-  --color-blueNavbar: #012139;
-  --color-grey0: #f8f8f8;
-  --color-grey-1: #6c7983;
-  --color-grey-2: #6c7983;
-  --color-grey-3: #8d9fad;
-  --color-grey-4: #454e56;
-  --color-grey-5: #2a2e35;
-  --color-grey-6: #12181b;
-}
-
 header .entete {
   max-width: 100%;
   /*permet à l'image de suivre les formats*/
@@ -69,17 +37,17 @@ header .text {
   justify-content: center;
   align-items: center;
 }
-
-#territoireBox {
+.Box{
   position: relative;
   width: 70vh;
-  height: 33vh;
   border-radius: 65px;
   background: #9ec2f4;
+  box-shadow: 5px 5px 10px #a9a8a8;
+  transition: transform 0.3s;  
+}
+#territoireBox {
   margin-left: 10%;
   margin-top: 5%;
-  box-shadow: 5px 5px 10px #a9a8a8;
-  transition: transform 0.3s;
 }
 
 #territoireBox:hover {
@@ -101,41 +69,36 @@ header .text {
   transform: scale(1.1);
 }
 
-#titleBox {
+.titleBox {
   position: relative;
   width: 40vh;
   height: 10vh;
   border-radius: 65px;
   background: #33669d;
-  left: -10%;
-  top: -10%;
+  margin-left: -10%;
+  margin-top: -5%;
   display: flex;
   justify-content: center;
   align-self: center;
+  border: 1px solid red;
+  padding: 20px;
 }
 
-#NatureText {
+.NatureText {
   position: relative;
   color: white;
   font-size: 100%;
   font-family: "Kaisei Decol", serif;
-  vertical-align: center;
   display: flex;
   justify-content: center;
   align-self: center;
   text-align: center;
+  border: 1px solid green;
 }
 
 #preserverBox {
-  position: relative;
-  width: 70vh;
-  height: 33vh;
-  border-radius: 65px;
-  background: #9ec2f4;
   margin-left: 3%;
   margin-top: -5%;
-  box-shadow: 5px 5px 10px #a9a8a8;
-  transition: transform 0.3s;
 }
 
 #volcan {
@@ -172,6 +135,8 @@ header .text {
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 30px;
+  padding: 20px;
 }
 
 #divCarte {
@@ -319,97 +284,29 @@ header .text {
 /*Responsivité*/
 
 @media (max-width: 950px) {
-
   #grpeTer {
-    display: block;
-    width: 100%;
-    height: 60%;
-    margin-top: 4%;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20vh;
   }
 
-  #territoireBox {
-    position: relative;
-    width: 70vh;
-    height: 33vh;
-    border-radius: 65px;
-    background: #9ec2f4;
-    margin-left: 0%;
-    margin-top: 0;
-    box-shadow: 5px 5px 10px #a9a8a8;
+  #territoireBox, #preserverBox {
     margin: 0 auto;
   }
 
-  #preserverBox {
-    position: relative;
-    width: 70vh;
-    height: 33vh;
-    border-radius: 65px;
-    background: #9ec2f4;
-    text-align: center;
-    margin-left: 0%;
-    margin-top: 0;
-    box-shadow: 5px 5px 10px #a9a8a8;
-    margin: 0 auto;
-  }
-
-  #volcan {
-    margin-top: 0;
-    margin-left: 0;
-    width: 0%;
-    height: 0%;
-    position: relative;
-    border-radius: 65px;
-    transition: transform 0.3s;
-    box-shadow: 5px 5px 10px #a9a8a8;
-    margin: 0 auto;
-  }
-
-  #cascade {
-    margin-top: 0;
-    margin-left: 0;
-    width: 0%;
-    height: 0%;
-    position: relative;
-    border-radius: 65px;
-    transition: transform 0.3s;
-    box-shadow: 5px 5px 10px #a9a8a8;
-    margin: 0 auto;
+  #volcan, #cascade {
+    display: none;
   }
 
   #CarteEntete {
-    margin-top: 10%;
-    width: 20%;
-    height: 30%;
-    position: relative;
-    color: white;
     font-size: 90%;
-    font-family: "Kaisei Decol", serif;
-    background: #33669d;
-    text-align: center;
-    border-radius: 65px;
-    margin-bottom: 2%;
-    margin-left: 5%;
-    box-shadow: 5px 5px 10px #a9a8a8;
   }
 
   header .text {
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    color: white;
-    width: 70%;
     font-size: 90%;
-    font-family: "Kaisei Decol", serif;
   }
 
   .portfolios {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
     margin-top: 2%;
-    margin: 5%;
   }
 
 }

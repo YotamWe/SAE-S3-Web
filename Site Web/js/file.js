@@ -87,7 +87,7 @@ magnifierEl.addEventListener("click", () => {
 /******************************************************************************************************** */
 
 /*Jeu d'affichage dans Elu*/
-const greeting = ["Les Élus", "vous souhaitent", "la Bienvenue !"];
+const greeting = ["Les Élus CASBT", "vous souhaitent", "la Bienvenue !"];
 let currentGreetingIndex = 0;
 let currentCharacterIndex = 0;
 let isDeleting = false;
