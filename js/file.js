@@ -137,12 +137,14 @@ function typeWriterEffect() {
 typeWriterEffect();
 
 
-/*function afficherDescription() {
+function openDescription() {
   // Affiche la page de description
   document.getElementById("informations").style.display = "block";
 }
 
+
+
 function fermerDescription() {
   // Ferme la page de description
   document.getElementById("informations").style.display = "none";
-}*/
+}

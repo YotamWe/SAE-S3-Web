@@ -151,19 +151,83 @@ article{
   vertical-align: center;
   margin: 0 0;
 }
-#villes {
+
+
+#communes{
+  padding: 0 35px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap-reverse;
+  min-height: 70vh;
 }
-.ville {
-  width: 350px;
-  height: 345px;
-  flex-shrink: 0;
-  border-radius: 65px;
-  background: #9ec2f4;
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
   text-align: center;
-  margin: 30px;
+  line-height: 44px;
+  background: #9fa8ff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #030032;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carrousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carrousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carrousel.dragging img{
+  pointer-events: none;
+}
+.carrousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  width: calc(100% / 3);
+  border-radius: 65px;
+  margin: 20px;
   box-shadow: 5px 5px 10px #a9a8a8;
-  
+}
+.carrousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carrousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carrousel img{
+    width: 100%;
+  }
 }
