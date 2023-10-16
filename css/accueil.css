@@ -79,27 +79,24 @@ article{
 }*/
 
 #actu{
-  display : flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5vh;
 }
 .actualite {
-  
-  
   margin-top: 4%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 560px;  /* 70vh */
   height: 305px; /* 33vh */
   flex-shrink: 0;
-  border-radius: 65px;
-  margin: 60px;
   position: relative;
 }
 .Box{
   position: relative;
-  width: 70vh;
+  width: 100%;
+  height: 100%;
+  padding: auto;
   border-radius: 65px;
   background: #9ec2f4;
   box-shadow: 5px 5px 10px #a9a8a8;
@@ -223,6 +220,11 @@ article{
 @media screen and (max-width: 900px) {
   .carrousel img{
     width: calc(100% / 2);
+  }
+  #actu{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5vh;
   }
 }
 
