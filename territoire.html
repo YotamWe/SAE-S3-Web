@@ -20,6 +20,12 @@
       src="https://kit.fontawesome.com/5a3688d8aa.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
 
   <body>
@@ -62,7 +68,9 @@
       <img id="cascade" src="img/cascade.png" alt="cascade image" />
       <div class="Box" id="territoireBox">
         <div class="titleBox">
-          <p class="NatureText">Un territoire riche, une nature exceptionnelle</p>
+          <p class="NatureText">
+            Un territoire riche, une nature exceptionnelle
+          </p>
         </div>
         <div id="textBox">
           <p id="terText">
@@ -98,7 +106,67 @@
     <div id="divCarte">
       <div id="map"></div>
     </div>
-
+    <section id="communes">
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-caret-left"></i>
+        <div class="carrousel">
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2022/09/tdh-vue2.png"
+            alt=""
+            onclick="afficherDescription()"
+          />
+          <div id="informations">
+            <h1>Description de l'image</h1>
+            <p>Voici les informations sur l'image :</p>
+            <p>Titre : Image de la Tour Eiffel</p>
+            <p>Auteur : Jean Dupont</p>
+            <p>Date : 2023-07-20</p>
+            <button onclick="fermerDescription()">Fermer</button>
+          </div>
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2022/12/Vue-de-saint-claude-ae%C2%A6urienne-scaled.jpg"
+            alt=""
+          />
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2021/12/Hotel_de_ville.jpg"
+            alt=""
+          />
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2021/12/460_photo_1-300x206.jpg"
+            alt=""
+          />
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2021/12/615_410_1627315095_80_615_410____2__trois-rivieres_1607.webp"
+            alt=""
+          />
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2022/09/52444378858_ca9522aaa6_o-300x225.jpg"
+            alt=""
+          />
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2022/09/52444330143_8a7640d7bf_o-2048x1365.jpg"
+            alt=""
+          />
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2023/01/cache_2468402440.png"
+            alt=""
+          />
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2022/09/52443890593_c28ee07514_o-scaled-e1666613761637.jpg"
+            alt=""
+          />
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2022/09/Anse-a-dos2.png"
+            alt=""
+          />
+          <img
+            src="https://www.grandsudcaraibe.fr/wp-content/uploads/2022/09/52443775266_d9d5db10c0_o-2048x1365.jpg"
+            alt=""
+          />
+        </div>
+        <i id="right" class="fa-solid fa-caret-right"></i>
+      </div>
+    </section>
     <h1 id="CarteEntete">Tourisme</h1>
     <section class="container" id="portfolio">
       <div class="portfolios">

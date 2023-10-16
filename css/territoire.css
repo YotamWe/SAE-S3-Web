@@ -310,3 +310,122 @@ header .text {
   }
 
 }
+
+#communes{
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  background-color: #9ec2f4;
+  margin-top: 20vh;
+}
+
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carrousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carrousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carrousel.dragging img{
+  pointer-events: none;
+}
+.carrousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+  border-radius: 30px;
+}
+.carrousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carrousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carrousel img{
+    width: 100%;
+  }
+}
+
+.carrousel #informations {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background-size: cover;
+  border-radius: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+
+.carrousel #informations {
+  transform: translate(0);
+}
+
+.carrousel h1 {
+  text-align: center;
+}
+
+.carrousel p {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.carrousel button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
