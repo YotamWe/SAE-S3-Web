@@ -60,8 +60,9 @@ header .entete {
   width: 40%;
 }
 article{
-  padding: 20px;
+  padding: 50px;
 }
+
 
 /*#TritreActu{
   z-index: 2;
@@ -79,22 +80,77 @@ article{
 
 #actu{
   display : flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .actualite {
+  
+  
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 560px;  /* 70vh */
-  height: 264px; /* 33vh */
+  height: 305px; /* 33vh */
   flex-shrink: 0;
+  border-radius: 65px;
+  margin: 60px;
+  position: relative;
+}
+.Box{
+  position: relative;
+  width: 70vh;
   border-radius: 65px;
   background: #9ec2f4;
   box-shadow: 5px 5px 10px #a9a8a8;
-  margin: 30px;
+  transition: transform 0.3s;  
+}
+#preserverBox {
+  margin-left: 3%;
+  margin-top: -5%;
+}
+.titleBox {
   position: relative;
-
+  width: 40vh;
+  height: 10vh;
+  border-radius: 65px;
+  background: #33669d;
+  margin-left: -10%;
+  margin-top: -5%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  
+  padding: 20px;
+}
+.NatureText {
+  position: relative;
+  color: white;
+  font-size: 100%;
+  font-family: "Kaisei Decol", serif;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
   
 }
-
+#textBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  padding: 20px;
+}
+#terText {
+  width: 90%;
+  position: relative;
+  color: white;
+  font-size: 100%;
+  font-family: "Kaisei Decol", serif;
+  text-align: center;
+  vertical-align: center;
+  margin: 0 0;
+}
 #villes {
   display: flex;
   justify-content: center;
