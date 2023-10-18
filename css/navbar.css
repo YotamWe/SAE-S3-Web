@@ -424,7 +424,7 @@ footer h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
     transform: translateX(100%);
     transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
   }
@@ -453,7 +453,7 @@ footer h3 {
 
   .btnBurger {
     display: flex;
-    z-index: 2;
+    z-index: 4;
   }
 
   footer .infos {
