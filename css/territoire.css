@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+body{
+  background-color:#f6f6f6;
+}
+
 header .entete {
   width: 100%;
   /*permet à l'image de suivre les formats*/
