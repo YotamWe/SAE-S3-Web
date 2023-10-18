@@ -10,6 +10,9 @@ header .entete {
   /*permet à l'image de suivre les formats*/
   opacity: 0.8;
   height: 100vh;
+  z-index: 000;
+
+  object-fit: cover;
 }
 
 header .text {
@@ -23,7 +26,7 @@ header .text {
 }
 
 #pres-accueil {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,17 +177,17 @@ header .text {
   border-radius: 2%;
   box-shadow: 5px 5px 10px #a9a8a8;
 }
-
-
-
+.video-slide {
+  position: absolute;
+  width: 100%;
+}
 
 /*div tourisme*/
 
 .portfolios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-  margin-top: 0;
+  grid-gap: 3rem;
   margin: 5%;
 }
 
@@ -361,11 +364,12 @@ header .text {
 
 @media (max-width: 950px) {
   #grpeTer {
-    margin-top: 20vh;
+    margin-top: 10vh;
   }
 
   #territoireBox, #preserverBox {
     margin: 0 auto;
+    width: 80%;
   }
 
   #volcan, #cascade {
