@@ -31,7 +31,7 @@ function toggleNav() {
     accueil.id = "accueil";
     let a = document.createElement("a");
     a.textContent = "Accueil";
-    a.href = "accueil.html";
+    a.href = "index.html";
     let ul = navbar.querySelector("ul");
     accueil.appendChild(a);
     //ul.appendChild(accueil);
