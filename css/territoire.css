@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color:#f6f6f6;
+  background-color: #e6f0ff;
 }
 
 header .entete {
@@ -18,6 +18,12 @@ header .entete {
 
   object-fit: cover;
 }
+#back {
+  background-color: rgba(158, 194, 244, 1);
+  padding: 60px;
+  color: rgba(51, 102, 157, 1);
+  margin: 1% auto;
+}
 
 header .text {
   z-index: 1;
@@ -28,6 +34,30 @@ header .text {
   font-size: 160%;
   font-family: "Kaisei Decol", serif;
 }
+.imgactu {
+  background-color: #9ec2f4;
+  width: 100%;
+  /*permet à l'image de suivre les formats*/
+  height: 20vh;
+  z-index: -6;
+  opacity: 80%;
+  object-fit: cover;
+}
+.text {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  color: var(--color-white);
+  width: 70%;
+  font-size: 160%;
+}
+
+#pres-actualite {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #pres-accueil {
   width: 100%;
@@ -36,117 +66,10 @@ header .text {
   align-items: center;
 }
 
-#grpeTer {
-  width: 100%;
-  height: 60%;
-  margin-top: 6%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Box{
-  position: relative;
-  width: 70vh;
-  border-radius: 65px;
-  background: #9ec2f4;
-  box-shadow: 5px 5px 10px #a9a8a8;
-  transition: transform 0.3s;  
-}
-#territoireBox {
-  margin-left: 10%;
-  margin-top: 5%;
-}
 
-#territoireBox:hover {
-  transform: scale(1.1);
-}
-
-#cascade {
-  margin-top: -3%;
-  margin-left: -3%;
-  width: 30%;
-  height: 40vh;
-  position: relative;
-  border-radius: 65px;
-  transition: transform 0.3s;
-  box-shadow: 5px 5px 10px #a9a8a8;
-}
-
-#cascade:hover {
-  transform: scale(1.1);
-}
-
-.titleBox {
-  position: relative;
-  width: 40vh;
-  height: 10vh;
-  border-radius: 65px;
-  background: #33669d;
-  margin-left: -10%;
-  margin-top: -5%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  padding: 20px;
-}
-
-.NatureText {
-  position: relative;
-  color: white;
-  font-size: 100%;
-  font-family: "Kaisei Decol", serif;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-}
-
-#preserverBox {
-  margin-left: 3%;
-  margin-top: -5%;
-}
-
-#volcan {
-  margin-top: 2%;
-  margin-left: 10%;
-  width: 30%;
-  height: 40vh;
-  position: relative;
-  border-radius: 65px;
-  transition: transform 0.3s;
-  box-shadow: 5px 5px 10px #a9a8a8;
-}
-
-#volcan:hover {
-  transform: scale(1.1);
-}
-
-#preserverBox:hover {
-  transform: scale(1.1);
-}
-
-#terText {
-  width: 90%;
-  position: relative;
-  color: white;
-  font-size: 100%;
-  font-family: "Kaisei Decol", serif;
-  text-align: center;
-  vertical-align: center;
-  margin: 0 0;
-}
-
-#textBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 30px;
-  padding: 20px;
-}
 
 #divCarte {
-  margin-top: 10%;
-  margin: 0 auto;
+  margin: 2% auto;
   position: relative;
   display: flex;
   max-width: 90%;
@@ -155,24 +78,8 @@ header .text {
   align-items: center;
   align-self: center;
   text-align: center;
-  z-index: 0;
 }
 
-#CarteEntete {
-  margin-top: 10%;
-  width: 20%;
-  height: 30%;
-  position: relative;
-  color: white;
-  font-size: 160%;
-  font-family: "Kaisei Decol", serif;
-  background: #33669d;
-  text-align: center;
-  border-radius: 65px;
-  margin-bottom: 2%;
-  margin-left: 5%;
-  box-shadow: 5px 5px 10px #a9a8a8;
-}
 
 #map {
   position: relative;
@@ -181,18 +88,21 @@ header .text {
   border-radius: 2%;
   box-shadow: 5px 5px 10px #a9a8a8;
 }
+
 .video-slide {
   position: absolute;
   width: 100%;
 }
+/*Cards*/
+
 
 /*div tourisme*/
 
 .portfolios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
-  margin: 5%;
+  grid-gap: 2%;
+  margin: 1% 5%;
 }
 
 .portfolios .portfolio-item {
@@ -212,7 +122,6 @@ header .text {
 .portfolios .portfolio-item .hover-items {
   width: 100%;
   height: 100%;
-  background-color: var(--color-secondary);
   position: absolute;
   left: 0;
   top: 0;
@@ -243,38 +152,6 @@ header .text {
   color: var(--color-grey-6);
 }
 
-.portfolios .portfolio-item .hover-items .icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon {
-  background-color: var(--color-primary);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 1rem;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon i {
-  font-size: 1.5rem;
-  color: var(--color-white);
-  margin: 0 1rem;
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon:hover {
-  background-color: var(--color-white);
-}
-
-.portfolios .portfolio-item .hover-items .icons .icon:hover i {
-  color: var(--color-primary);
-}
 
 .portfolio-item:hover .hover-items {
   opacity: 1;
@@ -283,84 +160,8 @@ header .text {
 
 
 .portfolios .portfolio-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
-
-
-
-#popular-destination {
-  padding: 0 10% ;
-  margin-bottom: 50px;
-}
-#popular-destination h1{
-  margin-bottom: 10px;
-  width: 20%;
-  height: 30%;
-  position: relative;
-  color: white;
-  font-size: 1.5rem;
-  font-family: "Kaisei Decol", serif;
-  background: #33669d;
-  text-align: center;
-  border-radius: 65px;
-  box-shadow: 5px 5px 10px #a9a8a8;
-}
-#popular-destination .content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  gap: 32px;
-}
-#popular-destination .content .box {
-  overflow: hidden;
-  position: relative;
-  height: 250px;
-  transition: 0.5s;
-  border-radius: 30px;
-}
-#popular-destination .content .box img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.box .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #030020;
-  text-align: center;
-  align-items: center;
-  transform: translateX(100%);
-  transition: 0.5s;
-}
-.box .content  h4 {
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-.box .content p {
-  padding: 2px;
-  font-size: 12px;
-}
-.box .content p:nth-child(3){
-  margin-bottom: 25px;
-}
-.box .content a {
-  margin-top: 60px;
-  padding: 10px 60px;
-  border: 2px solid #29d9d5;
-  color: #29d9d5;
-  font-weight: bold;
-}
-.box:hover {
-  box-shadow: 0 0 10px #29d9d5;
-}
-.box:hover .content {
-  transform: translateX(0);
-}
-
-
-
 
 
 
@@ -385,6 +186,10 @@ header .text {
   }
 
   header .text {
+    font-size: 90%;
+  }
+
+  .text {
     font-size: 90%;
   }
 

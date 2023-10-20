@@ -36,3 +36,7 @@ xmlhttp.onreadystatechange = function () {
 
 xmlhttp.open("GET", "json/CommunesBasseTerre.geojson", true);
 xmlhttp.send(null);
+
+
+//CARDS
+
