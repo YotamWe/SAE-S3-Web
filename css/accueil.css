@@ -368,3 +368,29 @@ article {
     width: 100%;
   }
 }
+
+@media (max-width : 768px){
+  .description {
+    flex-direction: column;
+    top: 1%;
+    display: flex;
+    width: 100%;
+    
+  }
+
+  .description .texte {
+    font-size: 18px;
+    /* Ajustez la taille de la police selon vos besoins */
+    line-height: 1.2;
+    /* Ajustez l'espacement entre les lignes si nécessaire */
+    width: 100%;
+    text-align: justify;
+    padding-top: 10%;
+  
+  }
+  
+  .description h1 {
+    width: 100%;
+  }
+
+}
