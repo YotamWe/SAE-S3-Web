@@ -82,11 +82,17 @@ header .text {
 
 
 #map {
+  z-index: 1;
   position: relative;
   height: 100%;
   width: 1000%;
   border-radius: 2%;
   box-shadow: 5px 5px 10px #a9a8a8;
+  pointer-events: none;
+}
+
+#divCarte:active{
+  pointer-events: auto;
 }
 
 .video-slide {
@@ -94,6 +100,41 @@ header .text {
   width: 100%;
 }
 /*Cards*/
+
+.card{
+  display: flex;
+  background-color: #9ec2f4;
+  border-radius: 65px 0px 65px 0px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1%; 
+}
+
+.Tcard{
+margin: auto;
+}
+
+.textCard{
+  position: relative;
+  color: white;
+  width: 70%;
+  font-size: 100%;
+}
+
+.titreCard{
+  position: relative;
+  color: white; 
+  width: 70%;
+  font-size: 160%;
+}
+
+.imgNat{
+  border-radius: 65px 0px 65px 0px;
+  z-index: 0; 
+  max-width: 100%;
+  height: 50vh;
+  position: relative;
+}
 
 
 /*div tourisme*/
@@ -103,6 +144,7 @@ header .text {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2%;
   margin: 1% 5%;
+  margin-bottom: 3%;
 }
 
 .portfolios .portfolio-item {
