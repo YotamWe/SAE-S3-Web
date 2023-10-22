@@ -12,29 +12,27 @@ header{
 }
 
 main{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 10vh;
-  padding: 5vh;
+  display: block;
+  align-items: center;
+  
 }
 #infos{
-  flex: 1;
+  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3vh;
   max-width: 100%;
-  margin: 10px ;
+  margin: 2% 20%;
 }
-.pseudo{
+.card{
   background-color: rgba(0, 0, 0, 0.747);
   font-family: "Montserrat", sans-serif;
   border-radius: 30px;
   padding: 20px;
-  max-width: 250px;
+  
   text-align: center;
 }
-.pseudo h3{
+.card h3{
   text-transform: uppercase;
 }
 
@@ -44,15 +42,15 @@ form {
   flex: 1;
   background: rgba(223, 221, 221, 0.3);
   padding: 1rem 1rem;
-  width: 90vh;
+  width: 60%;
   border-radius: 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.429);
   text-align: center;
   backdrop-filter: blur(7px);
-  margin: 10px ;
-  min-width: 50vh;
+  margin: 0 auto ;
+  ;
 }
 .titreFormulaire {
   color: black;
@@ -103,4 +101,8 @@ input[type="submit"]:hover {
   cursor: pointer;
   background-color: var(--color-blue0);
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.7);
+}
+
+#infos .card:hover {
+  transform: scale(1.08);
 }
