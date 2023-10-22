@@ -11,6 +11,7 @@ header{
   height: 20vh;
 }
 
+
 main{
   display: block;
   align-items: center;
@@ -42,7 +43,8 @@ form {
   flex: 1;
   background: rgba(223, 221, 221, 0.3);
   padding: 1rem 1rem;
-  width: 60%;
+  width: 40%;
+  height: 600px;
   border-radius: 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -69,7 +71,7 @@ input,
   border-radius: 50px;
   backdrop-filter: blur(5px);
   transition: all 0.3s;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
   color: black;
   font-weight: bolder;
   box-sizing: border-box;
@@ -86,7 +88,8 @@ input:focus {
   border: none;
 }
 .message {
-  height: 120px;
+  
+  height: 170px;
   border-radius: 15px;
   resize: none;
   font-size: 14px;
@@ -106,3 +109,9 @@ input[type="submit"]:hover {
 #infos .card:hover {
   transform: scale(1.08);
 }
+
+a 
+{ 
+ text-decoration:none; 
+ color: white;
+} 
