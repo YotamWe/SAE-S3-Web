@@ -20,10 +20,6 @@ Primary style
     box-sizing: border-box;
 }
 
-*::after,
-*::before {
-    content: '';
-}
 
 body {
     font-family: "kievit-regular", sans-serif;
@@ -59,7 +55,10 @@ body.cd-overlay::after {
         display: none;
     }
 }
-
+a::after,
+a::before {
+    content: '';
+}
 a {
     color: #96aafe;
     text-decoration: none;
@@ -90,6 +89,10 @@ header h1{
     content: "";
     display: table;
     clear: both;
+}
+
+.btnBurger .line{
+    background-color: white;
 }
 
 @media only screen and (min-width: 768px) {

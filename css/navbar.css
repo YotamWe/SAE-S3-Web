@@ -62,9 +62,11 @@ body {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.1s ease-in-out;
 }
+
 .theme-btn:active {
   transform: translateY(-3px);
 }
+
 .theme-btn i {
   font-size: 1.4rem;
   color: var(--color-white);
@@ -178,7 +180,7 @@ body {
   transition-delay: 0.5s;
 }
 
-.input::placeholder{
+.input::placeholder {
   color: white;
 }
 
@@ -462,11 +464,11 @@ footer h3 {
     top: 30px;
     left: 30px;
   }
-  
+
 
   footer .infos {
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -556,16 +558,16 @@ footer h3 {
     background-color: #33669d;
     flex
   }*/
-  
+
   #section2 #actu {
     display: flex;
     flex-direction: column;
   }
-  
+
   #section3 {
     height: min-content;
   }
-  
+
   /*.RGPD {
     position: relative;
     display: flex;
@@ -576,7 +578,7 @@ footer h3 {
     font-weight: 700;
     height: 100%;
   }*/
-  
+
   .RGPD ul {
     display: flex;
     flex-direction: column;
@@ -588,7 +590,7 @@ footer h3 {
     margin-bottom: 10vh;
 
   }
-  
+
   .RGPD ul li {
     padding: 10px;
   }
