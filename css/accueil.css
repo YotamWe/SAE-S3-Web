@@ -138,21 +138,25 @@ header .entete {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
 }
 
 .imgactu {
   top: 1%;
-  background-color: #9ec2f4;
+  
   max-width: 100%;
   /*permet à l'image de suivre les formats*/
-  height: auto;
   z-index: -6;
+  height: 50%;
+  opacity: 80%;
+  object-fit: cover;
 }
 
 #back {
   background-color: rgba(158, 194, 244, 1);
   padding: 60px;
   color: rgba(51, 102, 157, 1);
+  margin: 1% auto;
 }
 
 .description {
@@ -268,7 +272,7 @@ article{
   width: 90%;
   position: relative;
   color: white;
-  font-size: 100%;
+  font-size: 90%;
   font-family: "Kaisei Decol", serif;
   text-align: center;
   vertical-align: center;
