@@ -50,6 +50,10 @@ header video {
   object-fit: cover;
 }
 
+.btnBurger .line{
+  background-color: rgb(0, 225, 255);
+}
+
 .explication {
   color: black;
 
@@ -104,7 +108,7 @@ header video {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #116ab133;
+  background-color:   var(--color-cards);
   border-radius: 30px;
   padding: 20px;
   width: 100%;
