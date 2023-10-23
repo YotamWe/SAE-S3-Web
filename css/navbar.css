@@ -142,7 +142,7 @@ body {
   align-items: center;
   background-color: #040a51;
   padding: 5px;
-  width: 200px;
+  width: 50px;
   height: 50px;
   border-radius: 50px;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),
@@ -160,7 +160,7 @@ body {
 }
 
 .mic-icon {
-  width: 30px;
+  width: 0;
   position: absolute;
   right: 10px;
   transition: width 0.4s;
@@ -171,7 +171,7 @@ body {
   background-color: transparent;
   border: none;
   margin: 10px 50px;
-  width: 100%;
+  width: 0;
   outline: none;
   color: white;
   transition: width 1s;
@@ -182,16 +182,16 @@ body {
   color: white;
 }
 
-.active.search-bar-container {
-  width: 50px;
+.search-bar-container.active {
+  width: 200px;
 }
 
-.active .input {
-  width: 0;
+.search-bar-container.active .input {
+  width: 100%;
 }
 
-.active .mic-icon {
-  width: 0;
+.search-bar-container.active .mic-icon {
+  width: 30px;
 }
 
 
@@ -455,6 +455,14 @@ footer h3 {
     display: flex;
     z-index: 4;
   }
+
+  .search-bar-container {
+    position: absolute;
+    background-color: transparent;
+    top: 30px;
+    left: 30px;
+  }
+  
 
   footer .infos {
     flex-direction: column;
