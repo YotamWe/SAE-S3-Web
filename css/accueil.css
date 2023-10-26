@@ -388,9 +388,19 @@ article{
     font-size: 70%;
   }
 
+  .Box{
+    margin: 0 auto;
+  }
+
+  #preserverBox{
+    margin:  0 auto; 
+  }
+
   .NatureText {
     font-size: 80%;
 }
+
+
 }
 
 
