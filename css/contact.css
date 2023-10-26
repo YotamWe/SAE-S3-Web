@@ -148,7 +148,7 @@ header #TitreContact::after {
 @media screen and (max-width: 950px) {
 
   header .TitreContact{
-    font-size: 13vh;
+    font-size: 5vh;
     position: absolute;
     top: 15%;
     left: 50%;  
@@ -157,7 +157,18 @@ header #TitreContact::after {
   #infos{
     display: flex;
     flex-direction: column;
+    height: 60%;
+    
+    margin: 15px 20px;
   }
+  form{
+    margin-top: 10%;
+    width: 90%;
+    margin: 10px;
+  }
+  
+
+
 
   
 
