@@ -138,13 +138,11 @@ header .entete {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .imgactu {
   top: 1%;
-  
   max-width: 100%;
   /*permet à l'image de suivre les formats*/
   z-index: -6;
@@ -229,6 +227,10 @@ article{
   transition: transform 0.3s;
 }
 
+.Box:hover{
+  transform: scale(1.05);
+}
+
 #preserverBox {
   margin-left: 3%;
   margin-top: -5%;
@@ -245,8 +247,6 @@ article{
   display: flex;
   justify-content: center;
   align-self: center;
-
-  padding: 20px;
 }
 
 .NatureText {
@@ -265,19 +265,18 @@ article{
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 30px;
-  padding: 20px;
 }
 
 #terText {
   width: 90%;
   position: relative;
   color: white;
-  font-size: 90%;
+  font-size: 80%;
   font-family: "Kaisei Decol", serif;
   text-align: center;
   vertical-align: center;
   margin: 0 0;
+  padding-top: 5%;
 }
 
 
@@ -358,17 +357,56 @@ article{
   margin-left: 0px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .carrousel img {
-    width: calc(100% / 2);
+    width: calc(100% / 3);
   }
 
   #actu {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5vh;
   }
+
+  #pres-accueil .content h1{
+    font-size: 110%;
+  }
+
+  #pres-accueil .content p{
+    font-size: 70%;
+    width: 70%;
+  }
+
+  #pres-accueil .content a {
+    font-size: 60%;
+  }
+
+  .text {
+    font-size: 90%;
+  }
+
+  #terText {
+    width: 90%;
+    font-size: 70%;
+  }
+
+  .Box{
+    margin: 0 auto;
+  }
+
+  #preserverBox{
+    margin:  0 auto; 
+  }
+
+  .NatureText {
+    font-size: 80%;
 }
+
+
+}
+
+
+
+
+
 
 @media screen and (max-width: 550px) {
   .carrousel img {
