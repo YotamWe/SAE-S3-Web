@@ -31,6 +31,7 @@ main{
   border-radius: 30px;
   padding: 20px;
   min-height: 22vh;
+  color: white;
   text-align: center;
   transition: all 0.3s ease-in-out;
 
@@ -85,7 +86,7 @@ input,
   color: black;
   font-weight: 100;
 }
-input:hover,
+form input:hover,
 .message:hover {
   background: rgba(255, 255, 255, 0.2);
 }
@@ -108,6 +109,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   cursor: pointer;
   background-color: var(--color-blue0);
+  color  :white;
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.7);
 }
 
@@ -126,7 +128,7 @@ header .TitreContact {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: var(--color-white);
   height: 17vh;
   font-family: "Kaisei Decol-Bold", serif;
   font-weight: 600;
