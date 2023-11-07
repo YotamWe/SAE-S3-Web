@@ -30,8 +30,11 @@ main{
   font-family: "Montserrat", sans-serif;
   border-radius: 30px;
   padding: 20px;
-  
+  min-height: 22vh;
+  color: white;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+
 }
 .card h3{
   text-transform: uppercase;
@@ -43,7 +46,8 @@ form {
   flex: 1;
   background: rgba(223, 221, 221, 0.3);
   padding: 1rem 1rem;
-  width: 40%;
+  width: 50%;
+  min-width: 400px;
   height: 600px;
   border-radius: 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -52,6 +56,7 @@ form {
   text-align: center;
   backdrop-filter: blur(7px);
   margin: 0 auto ;
+  margin-top: 15%;
   ;
 }
 .titreFormulaire {
@@ -67,6 +72,7 @@ input,
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding: 1rem;
+  font-family: "Kaisei Decol-Bold", serif;
   width: 85%;
   border-radius: 50px;
   backdrop-filter: blur(5px);
@@ -80,7 +86,7 @@ input,
   color: black;
   font-weight: 100;
 }
-input:hover,
+form input:hover,
 .message:hover {
   background: rgba(255, 255, 255, 0.2);
 }
@@ -103,6 +109,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   cursor: pointer;
   background-color: var(--color-blue0);
+  color  :white;
   box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.7);
 }
 
@@ -115,3 +122,56 @@ a
  text-decoration:none; 
  color: white;
 } 
+
+header .TitreContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-white);
+  height: 17vh;
+  font-family: "Kaisei Decol-Bold", serif;
+  font-weight: 600;
+  font-size: 16vh;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+}
+
+header #TitreContact::after {
+  position: relative;
+  right: 0;
+  animation: blink 1s step-end infinite;
+}
+
+@media screen and (max-width: 950px) {
+
+  header .TitreContact{
+    font-size: 5vh;
+    position: absolute;
+    top: 15%;
+    left: 50%;  
+  }
+
+  #infos{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    
+    margin: 15px 20px;
+  }
+  form{
+    margin-top: 10%;
+    width: 90%;
+    margin: 10px;
+  }
+  
+
+
+
+  
+
+}
